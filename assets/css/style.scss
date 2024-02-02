@@ -204,7 +204,6 @@ button.navbar-toggler.collapsed{
       }
     }
 
-
     main{
       section#carousel{
         .owl-nav{
@@ -389,6 +388,7 @@ button.navbar-toggler.collapsed{
           }
       }
     }
+
     section#about{
       padding: 13rem 0;
 
@@ -471,7 +471,7 @@ button.navbar-toggler.collapsed{
       background: center/cover;
       background-repeat: no-repeat;
       object-fit: cover;
-
+      background-color: $dark-gray;
         .accom-wrap{
             img{
                 background: center/cover;
@@ -499,6 +499,10 @@ button.navbar-toggler.collapsed{
     section#accom{
         margin: 10rem 0 10rem 0;
         .card{
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          object-fit: cover;
             .card-body{
                 p.crd-txt-2 {
                     line-height: 0;
