@@ -439,7 +439,7 @@ button.navbar-toggler.collapsed{
         }
     }
 
-   // ACCOMODATION
+   // ACCOMODATION PAGE
    section#jumbotron{
     height: 60svh;
     width: 100%;
@@ -474,24 +474,28 @@ button.navbar-toggler.collapsed{
       background-color: $dark-gray;
         .accom-wrap{
             img{
-                background: center/cover;
-                object-fit: cover;
+              background: center/cover;
+              object-fit: cover;
             }
             img.accom-img-1{
-                height: 230px;
-                width: 70%;
+              border-radius: 3rem 2rem;
+              height: 230px;
+              width: 80%;
             }
             img.accom-img-2{
-                height: 325px;
-                width: 80%;
+              border-radius: 2rem 3rem;
+              height: 325px;
+              width: 90%;
             }
             img.accom-img-3{
-                height: 280px;
-                width: 80%;
+              border-radius: 2rem 3rem;
+              height: 280px;
+              width: 90%;
             }
             img.accom-img-4{
-                height: 180px;
-                width: 60%;
+              border-radius: 3rem 2rem;
+              height: 200px;
+              width: 70%;
             }
         }
     }
@@ -519,6 +523,57 @@ button.navbar-toggler.collapsed{
             }
         }
     }
+
+    // ACTIVITIES PAGE
+    section#activities{
+      padding: 10rem 0;
+      .card{
+        // min-height: 300px;
+        // max-height: 500px;
+        // border-radius: 2rem;
+        img{
+          width: auto;
+          height: 50px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    section#learning{
+      position: relative;
+      padding: 10rem 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+      overflow: hidden;
+      img{
+        width: 45%;
+        height:100%;
+        right: 0;
+        bottom: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+        border-radius: 3rem 0 0 3rem;
+      }
+      // .col{
+      //   img{
+      //     max-width:100%;
+      //     height: 300px;
+      //     background-position: center;
+      //     background-repeat: no-repeat;
+      //     background-size: cover;
+      //     object-fit: cover;
+      //   }
+      //   img.img-1{
+      //    top: 5rem;
+          
+      //   }
+      // }
+    }
+
  }
 
 // XX-Large devices (larger desktops, 1400px and up)
