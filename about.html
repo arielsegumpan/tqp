@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="fixed-top rounded-bottom-5">
-        <nav class="navbar navbar-expand-lg py-2">
+    <header class="fixed-top py-3">
+        <nav class="navbar navbar-expand-lg py-2 position-relative">
             <div class="container">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand position-absolute" href="index.html">
                 <img src="assets/imgs/logo.png" alt="" width="auto" height="60" class="rounded-circle">
               </a>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,137 +31,239 @@
                 </div>
               </button>
               <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 pe-5">
                   <li class="nav-item  me-4">
-                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item dropdown me-4">
-                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Facilities <i class="bi bi-chevron-down"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="accomodation.html">Accomodation</a></li>
-                      <li><a class="dropdown-item" href="#">Restaurant</a></li>
-                      <li><a class="dropdown-item" href="#">Meetings</a></li>
-                    </ul>
+                    <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item dropdown me-4">
                     <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Activities <i class="bi bi-chevron-down"></i>
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="activites.html">What to Do</a></li>
-                      <li><a class="dropdown-item" href="#">Getting There</a></li>
-                      <li><a class="dropdown-item" href="#">Map of the Resort</a></li>  
+                      <li><a class="dropdown-item" href="nature.html">Nature Walks</a></li>
+                      <li><a class="dropdown-item" href="fruit.html">Fruit Picking</a></li>
+                      <li><a class="dropdown-item" href="wellness.html">Wellness</a></li>  
+                      <li><a class="dropdown-item" href="bird.html">Bird Sanctuaries</a></li>  
                     </ul>
                   </li>
                   <li class="nav-item  me-4">
-                    <a class="nav-link text-white" aria-current="page" href="#">Rooms</a>
-                  </li>
-                  <li class="nav-item  me-4">
-                    <a class="nav-link text-white" aria-current="page" href="#">About</a>
-                  </li>
-                  <li class="nav-item  me-4">
-                    <a class="nav-link text-white" aria-current="page" href="#">Contact</a>
+                    <a class="nav-link text-white" aria-current="page" href="accomodation.html">Rooms</a>
                   </li>
                 </ul>
-                <div class="d-flex flex-row">
-                  <a href="#!" class="btn btn-black px-4 py-2"><i class="bi bi-arrow-right me-2"></i>Explore</a>
-                </div>
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 ps-5">
+                  <li class="nav-item  me-4">
+                    <a class="nav-link text-white" aria-current="page" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item dropdown me-4">
+                    <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                      <li><a class="dropdown-item" href="about.html">History</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item  me-4">
+                    <a class="nav-link text-white" aria-current="page" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+               
               </div>
             </div>
         </nav>
         
     </header>
 
-
     <main>
-
-        <section id="jumbotron" class="position-relative" style="background: url('assets/imgs/pexels-anna-shvets-5230907.jpg') center/cover no-repeat;">
+        <section id="jumbotron" class="position-relative" style="background-image: url('assets/imgs/pexels-tima-miroshnichenko-6010285.jpg');">
             <div class="container">
-              <div class="row">
-                <div class="jumb-cont position-relative">
-                  <div class="jumb-col col-6 my-auto position-absolute">
-                    <h1 class="text-white display-3">About us</h1>
-                    <h6 class="text-white lh-lg mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur quae eius quibusdam itaque nam quidem exercitationem veniam praesentium ratione?</h6>
-                  </div>
+                <div class="row">
+                    <div id="jumb-col" class="col-12 col-lg-7 mx-auto text-center position-relative">
+                       <div class="jumb-wrap position-absolute">
+                        <h1 class="display-4 text-lteal">About Us</h1>
+                        <p class="lh-lg text-lteal monts mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit aperiam reprehenderit vel natus vitae doloribus consectetur similique praesentium tenetur repellendus.</p>
+                       </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="jumb-overlay"></div>
         </section>
 
+        <section id="about-sec-1" class="bg-lteal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 px-lg-3">
+                        <div class="row row-cols-2">
+                            <div class="col mt-auto position-relative">
+                                <img src="assets/imgs/pexels-anton-polyakov-5725185.jpg" alt="" class="rounded-4 about-img-1">
+                            </div>
+                            <div class="col position-relative">
+                                <img src="assets/imgs/resort.jpg" alt="" class="rounded-4 about-img-2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 ps-lg-4">
+                        <h1 class="text-primary">The Quiet Place Farm Resort</h1>
+                        <p class="lh-lg text-pcolor monts mt-5">Set on 25 hectares of sloping terrain fringed with trees, The Quiet Place Farm Resort is part of a fully functioning agricultural estate in Bago City, an area planted mostly to rice in the largely sugar producing province of Negros Occidental. The resort offers a unique opportunity to experience rural life in the tropics without the sacrifice of comfort. Twenty-six air- conditioned rooms with modern conveniences and a full-service restaurant ensure a pleasant, enjoyable and comfortable stay. There is also the resort's Ayo Spa and Wellness Center offering a menu of Asian and Filipino health traditions using tropical oils and essences produced on site or in neighboring communities.</p> 
+                    
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 mt-5">
+                            <div class="col">
+                                <img src="assets/imgs/pexels-tom-fisk-4856507.jpg" alt="" class="rounded-4 about-img-3">
+                            </div>
+                            <div class="col">
+                                <img src="assets/imgs/senior-asian-farmer-harvesting-fresh-sweet-yellow-marian-plums-gandaria-fruit-maprang-mayongchit-exotic-tropical-fruits.jpg" alt="" class="rounded-4 about-img-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="about-sec-1" class="bg-primary" style="background-image: url('assets/imgs/pattern-white.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 ps-lg-4">
+                        <h1 class="text-lteal">The Quiet Place Farm Resort</h1>
+                        <p class="lh-lg text-lteal monts mt-5">Set on 25 hectares of sloping terrain fringed with trees, The Quiet Place Farm Resort is part of a fully functioning agricultural estate in Bago City, an area planted mostly to rice in the largely sugar producing province of Negros Occidental. The resort offers a unique opportunity to experience rural life in the tropics without the sacrifice of comfort. Twenty-six air- conditioned rooms with modern conveniences and a full-service restaurant ensure a pleasant, enjoyable and comfortable stay. There is also the resort's Ayo Spa and Wellness Center offering a menu of Asian and Filipino health traditions using tropical oils and essences produced on site or in neighboring communities.</p> 
+                    
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 mt-5">
+                            <div class="col">
+                                <img src="assets/imgs/pexels-tom-fisk-5895692.jpg" alt="" class="rounded-4 about-img-3">
+                            </div>
+                            <div class="col">
+                                <img src="assets/imgs/pexels-neemias-seara-3428905.jpg" alt="" class="rounded-4 about-img-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 px-lg-3">
+                        <div class="row row-cols-2">
+                            <div class="col mt-auto position-relative">
+                                <img src="assets/imgs/pexels-anton-polyakov-5725185.jpg" alt="" class="rounded-4 about-img-1">
+                            </div>
+                            <div class="col position-relative">
+                                <img src="assets/imgs/resort.jpg" alt="" class="rounded-4 about-img-2">
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
 
-
+        <section id="nature-sec-3" class="bg-lteal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <iframe class="rounded-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3922.127646860108!2d122.94013751054581!3d10.569183089523754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aecf29d61254d5%3A0x7d61470c6c44bf96!2sThe%20Quiet%20Place%20Farm%20Resort!5e0!3m2!1sen!2sph!4v1707058446944!5m2!1sen!2sph" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row g-4">
+                            <div class="col-12 col-lg-6 my-auto p-4">
+                               <h3 class="text-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, saepe?</h3>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <img src="assets/imgs/pexels-quang-nguyen-vinh-14036478.jpg" alt="" class="rounded-4 img-2">
+                            </div>
+                            <div class="col-12">
+                                <img src="assets/imgs/pexels-rattasat-2804327.jpg" alt="" class="rounded-4 img-3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </main>
+   
 
-
-    <footer class="bg-primary">
+    <footer class="bg-primary"  style="background-image: url('assets/imgs/pattern-white.png');">
       <div class="container">
-        <div class="main-footer">
-          <div class="row row-cols-1 row-cols-lg-3 g-4">
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <h1 class="text-white display-5">Embrace Serenity at The Quiet Place Farm Resort -</h1>
-              <a href="#!" class="btn btn-black px-5 py-3 mt-4">Read More</a>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3 ">
-              <div class="ps-lg-5 ms-lg-5">
-                <h6 class="text-black text-uppercase mb-4">Quick Links</h6>
-                <ul class="nav flex-column text-center text-md-start ">
-                  <li class="nav-item mb-3">
-                    <a class="text-white fs-6 active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="accommodation.html">Accommodation</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="room.html">Rooms</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="about.html">About Us</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3 text-white">
-              <div class="resort-address mb-5">
-                <h6 class=" text-black mb-4">RESORT ADDRESS:</h6>
-                <p><i class="bi bi-geo-alt me-2"></i>Km. 14 Barangay Tabunan, Bago City, Negros Occidental, 6101 Philippines</p>
-                <p><i class="bi bi-telephone-outbound me-2"></i> + 63 34 731 0100</p>
-              </div>
-              <div class="sales-address">
-                <h6 class=" text-black mb-4">SALES OFFICE ADDRESS:</h6>
-                <p><i class="bi bi-geo-alt me-2"></i>D. C. Cruz Building. Magsaysay Avenue, Bacolod City, 6100 Philippines</p>
-                <p><i class="bi bi-telephone-outbound me-2"></i> + 63 34 707 7011</p>
-                <p><i class="bi bi-printer me-2"></i> + 63 34 707 0017</p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <h4 class="fw-bold text-white mb-4">Subscribe to our newsletter</h4>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control px-3 py-3" placeholder="Your email...">
-                <button type="submit" class="btn btn-black px-4 text-primary"><i class="bi bi-send me-2"></i>Submit</button>
-              </div>
-            </div>
-
+        <div class="row">
+          <div class="col-12 position-relative">
+            <img src="assets/imgs/logo.png" alt="" class="footer-logo position-absolute">
           </div>
         </div>
-        <div class="text-gray">
-          <hr>
+        <div class="row">
+
+          <div class="col-12 col-lg-3">
+            <div class="d-flex mb-4">
+              <div class="flex-shrink-0">
+                <i class="bi bi-geo-alt text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <p>Km. 14 Barangay Tabunan, Bago City, Negros Occidental, 6101 Philippines</p>
+                <p>+ 63 34 731 0100</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i class="bi bi-geo-alt text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <p>D. C. Cruz Building. Magsaysay Avenue, Bacolod City, 6100 Philippines</p>
+                <p>+ 63 34 707 7011</p>
+                <p>+ 63 34 707 0017</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <ul class="nav flex-column text-center text-md-start ms-lg-5">
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Site Map</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Terms and Condition</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <ul class="nav flex-column text-center text-md-start ms-lg-5">
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Home</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Rooms</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Blog</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">About</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <h4 class="text-lteal mb-4">Sign up to our newsletter</h4>
+            <input type="text" class="form-control px-3 py-2" placeholder="Your email...">
+            <button type="submit" class="btn btn-black w-100 px-4 text-primary mt-3 py-2"><i class="bi bi-send me-2"></i>Submit</button>
+          </div>
         </div>
-        
-        <div class="row text-center text-white">
-          <p><small>Copyright © 2004 All rights reserved. For Comments and Suggestions?&nbsp;&nbsp;Email us at: <a class="text-black" href="mailto:info@thequietplace.com.ph">info@thequietplace.com.ph</a> </small></p>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div id="soc-med" class="mt-5 pt-4">
+              <div class="d-flex flex-row justify-content-center text-lteal gap-4 ">
+                <a href="#!" class="text-decoration-none fs-4 mb-4 text-lteal" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="#!" class="text-decoration-none fs-4 mb-4 text-lteal" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#!" class="text-decoration-none fs-4 mb-4 text-lteal"  target="_blank"><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-lteal text-center">
+            <p>Copyright © 2024 All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
