@@ -1,0 +1,292 @@
+
+ <main>
+        <!-- CAROUSEL -->
+        <section id="carousel">
+         <div class="container-fluid p-0 overflow-x-hidden">
+          <div class="row position-relative">
+            <div>
+              <div id="carous" class="owl-carousel owl-theme">
+            
+                <div class="item position-relative">
+                  <div id="bg-img" style="
+                    background: url('assets/imgs/accommodation-2.jpg') center/cover no-repeat;
+                  "></div>
+
+                  <div class="img-overlay"></div>
+
+                </div>
+    
+                <div class="item position-relative">
+                  
+                  <div id="bg-img" style="
+                  background: url('assets/imgs/pexels-pixabay-271643.jpg') center/cover no-repeat;
+                  "></div>
+                  <div class="img-overlay"></div>
+                </div>
+    
+                <div class="item position-relative">
+                  <div id="bg-img" style="
+                  background: url('assets/imgs/pexels-pok-rie-5379333.jpg') center/cover no-repeat;
+                  "></div>
+                  <div class="img-overlay"></div>
+                </div>
+    
+              </div>
+            </div>
+        
+          </div>
+           <div class="container">
+            <div id="hero-imgs" class="row">
+              <div class="col-12">
+                <h1 class="display-3 text-white">Discover Tranquility: Nature's Healing Embrace</h1>
+                <h5 class="monts text-white mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, rerum. Minima error tenetur expedita odit qui, ut ipsum ex id?</h5>
+                <a href="#!" class="btn btn-outline-white monts fw-bold rounded-5 px-5 py-3 mt-5"><i class="bi bi-arrow-right me-3"></i>Book Now</a>
+              </div>
+            </div>
+           </div>
+        
+          <div id="soc-med">
+            <div class="d-flex flex-column ">
+              <a href="#!" class="text-decoration-none text-white fs-4 mb-4 bg-primary px-2 py-1 rounded-3"><i class="bi bi-facebook"></i></a>
+              <a href="#!" class="text-decoration-none text-white fs-4 mb-4 bg-primary px-2 py-1 rounded-3"><i class="bi bi-instagram"></i></a>
+              <a href="#!" class="text-decoration-none text-white fs-4 mb-4 bg-primary px-2 py-1 rounded-3"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+         </div>
+        </section>
+        <!-- END OF CAROUSEL -->
+        <section id="services" style="background-image: url('assets/imgs/pattern.png');">
+            <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-4 text-center text-lg-start mb-5 mb-lg-0">
+                    <h2 class="text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, mollitia.</h2>
+                    <h5 class="text-gray mt-4 monts lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae placeat pariatur, unde accusantium voluptate adipisci!</h5>
+                  </div>
+                  <div class="col-12 col-lg-8">
+                    <div class="row row-cols-2 row-cols-lg-3 g-3 justify-content-center justify-content-lg-start">
+                      <div class="col">
+                        <div class="card mb-3 border-0 w-100 bg-transparent">
+                          <div class="row g-0">
+                              <div class="col-md-4 text-lg-center">
+                                <img src="assets/imgs/leaves.png" alt="">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body p-0">
+                                  <h4 class="card-title text-primary">Agricultural Experience</h4>
+                                  <p class="card-text text-gray monts">Engage in hands-on farm activities, exploring sustainable farming practices.</p>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                          <div class="card mb-3 border-0 w-100 bg-transparent">
+                            <div class="row g-0">
+                              <div class="col-md-4 text-lg-center">
+                                <img src="assets/imgs/spa-candles.png" alt="">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body p-0">
+                                  <h4 class="card-title text-primary">Nature Immersion Package</h4>
+                                  <p class="card-text text-gray monts">Immerse in tranquility with room accommodation, guided nature walks, and bird sanctuaries.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card mb-3 border-0 w-100 bg-transparent">
+                          <div class="row g-0">
+                              <div class="col-md-4 text-lg-center">
+                                <img src="assets/imgs/culinary.png" alt="">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body p-0">
+                                  <h4 class="card-title text-primary">Gastronomic Delights</h4>
+                                  <p class="card-text text-gray monts">Indulge in farm-to-table dining, savoring dishes crafted from locally sourced ingredients.</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card mb-3 border-0 w-100 bg-transparent">
+                          <div class="row g-0">
+                            <div class="col-md-4 text-lg-center">
+                              <img src="assets/imgs/lotus-flower.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body p-0">
+                              <h4 class="card-title text-primary">Herbal Tours</h4>
+                              <p class="card-text text-gray monts">Explore nature's remedies with guided herbal excursions.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                            <div class="card mb-3 border-0 w-100 bg-transparent">
+                              <div class="row g-0">
+                                <div class="col-md-4 text-lg-center">
+                                  <img src="assets/imgs/calendar.png" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body p-0">
+                                    <h4 class="card-title text-primary">Fruit Picking Adventure</h4>
+                                    <p class="card-text text-gray monts">Harvest your own fruits for a joyful, organic experience in our orchards.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card mb-3 border-0 w-100 bg-transparent">
+                          <div class="row g-0">
+                            <div class="col-md-4 text-lg-center">
+                              <img src="assets/imgs/calendar.png" alt="">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body p-0">
+                                <h4 class="card-title text-primary">Educational Workshops</h4>
+                                <p class="card-text text-gray monts">Enrich your mind with workshops covering agriculture, sustainability, and nature conservation.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="bg-primary" >
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-5 my-lg-auto">
+                <h6 class="text-uppercase sm-title">Accomodation</h6>
+                <h2 class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi?</h2>
+                <h5 class="text-white my-4 monts lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum reiciendis quia veniam ullam. Dolor, in.</h5>
+                <a href="#!" class="btn btn-outline-white px-5 py-3 mt-4">Learn More</a>
+              </div>
+              <div class="col-12 col-lg-7">
+                <div class="accom-wrap position-relative">
+                  <div class="row-wrap position-absolute">
+                    <div class="row row-cols-2 g-3">
+                      <div class="col mt-auto text-end">
+                        <a href="#!" class="text-decoration-none">
+                          <img class="img-1 rounded-5" src="assets/imgs/pexels-pixabay-164595.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="#!" class="text-decoration-none">
+                          <img class="img-2 rounded-5" src="assets/imgs/pexels-jonathan-borba-3144580.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col text-end">
+                        <a href="#!" class="text-decoration-none">
+                          <img class="img-3 rounded-5" src="assets/imgs/pexels-tima-miroshnichenko-6010285.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="col">
+                        <a href="#!" class="text-decoration-none">
+                          <img class="img-4 rounded-5" src="assets/imgs/pexels-christopher-moon-12836470.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="about-img-wrap position-relative">
+                  <div class="row row-cols-2">
+                    <div class="col">
+                      <img src="assets/imgs/pexels-max-rahubovskiy-7061659.jpg" alt="" class="img-fluid about-img1 rounded-5">
+                    </div>
+                    <div class="col">
+                      <img src="assets/imgs/pexels-anna-shvets-5230907.jpg" alt="" class="img-fluid about-img2 rounded-5">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 my-auto px-lg-5">
+                <h2 class="text-primary mb-4">
+                  <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                      <img src="assets/imgs/yoga-position.png" alt="..." class="img-fluid content-icon">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                      Soothe the senses. Nourish the spirit
+                    </div>
+                  </div>
+                </h2>
+                <p class="lh-lg text-gray monts">
+                  Set on 25 hectares of sloping terrain fringed with trees, The Quiet Place Farm Resort is part of a fully functioning agricultural estate in Bago City, an area planted mostly to rice in the largely sugar producing province of Negros Occidental. The resort offers a unique opportunity to experience rural life in the tropics without the sacrifice of comfort. </p>
+                <a href="#!" class="btn btn-primary px-5 py-3 mt-4">Read More</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="card rounded-5 bg-primary p-0">
+                <div class="row g-0">
+                  <div class="col-md-6">
+                    <img src="assets/imgs/pexels-pixabay-164595.jpg" class="img-fluid rounded-start-5 rounded-end-5 rounded-end-lg-0" alt="...">
+                  </div>
+                  <div class="col-md-6 my-auto text-white">
+                    <div class="card-body px-lg-5 py-lg-5 my-5">
+                     <div class="mb-5">
+                      <h1 class="mb-4"><i class="bi bi-info-circle me-2"></i>Inquire Now</h1>
+                      <h6 class="monts lh-lg">We invite you to journey to the heart of quiet, within the restful and healing embrace of nature at The Quiet Place Farm Resort...</h6>
+                     </div>
+                      
+                      <form action="#!">
+                        <div class="row mb-4">
+                          <div class="col">
+                            <label for="" class="mb-3">Name:</label>
+                            <input type="text" class="form-control px-3 py-2 monts" placeholder="Your name...">
+                          </div>
+                          <div class="col">
+                            <label for="" class="mb-3">Address:</label>
+                            <input type="text" class="form-control px-3 py-2 monts" placeholder="Your address...">
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col">
+                            <label for="" class="mb-3">Subject:</label>
+                            <input type="text" class="form-control px-3 py-2 monts" placeholder="Your subject...">
+                          </div>
+                        </div>
+                        <div class="row mb-5">
+                          <div class="col">
+                            <label for="" class="mb-3">Message:</label>
+                            <textarea class="form-control rounded-4 p-3 monts" name="" id="" cols="20" rows="3"  placeholder="Your message..."></textarea>
+                          </div>
+                        </div>
+                        <button type="submit" class="btn btn-white px-5 py-3 text-primary"><i class="bi bi-send me-2"></i>Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
