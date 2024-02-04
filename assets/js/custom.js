@@ -48,6 +48,34 @@ $(document).ready(() => {
     });
 
 
+    let nat1 = $('#nat-carous1');
+
+    nat1.owlCarousel({
+        touchDrag  : false,
+        mouseDrag  : false,
+        loop:true,
+        margin:10,
+        nav:true,
+        center:true,
+        dots:false,
+        autoplayTimeout: 10000,
+        autoplay:true,
+        fluidSpeed: true,
+        autoplaySpeed: 6000,
+        smartSpeed:3000,
+        navText : ['<i class="bi bi-chevron-left fs-5 text-white"></i>','<i class="bi bi-chevron-right fs-5 text-white"></i>'],
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
 
 
     // Add hover event handlers

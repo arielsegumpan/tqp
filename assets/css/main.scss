@@ -1,6 +1,6 @@
 
 $green: #578634;
-$prim: #00a19b;
+$prim: #1E969A;
 $trans: .3s ease;
 $nav-size: 15px;
 $gray: #74837f;
@@ -13,6 +13,8 @@ $pink_light: #F0EBCE;
 $pink:#E5D9B6;
 $brown: #877E41;
 $red:#dc3545;
+$pcolor: #5A6764;
+$lteal: #EDFFFE;
 
 @import url('https://fonts.cdnfonts.com/css/fengardo-neue');
 // Custom.scss
@@ -30,10 +32,10 @@ $dropdown-link-hover-color: $prim;
 $dropdown-link-hover-bg: none!default;
 $nav-link-font-size: $nav-size!default;
 $dropdown-font-size:$nav-size!default;
-$btn-border-radius: 100px!default;
-$btn-border-radius-sm: 100px!default;
-$btn-border-radius-lg: 100px!default;
-$input-border-radius:  100px!default;
+// $btn-border-radius: 100px!default;
+// $btn-border-radius-sm: 100px!default;
+// $btn-border-radius-lg: 100px!default;
+// $input-border-radius:  100px!default;
 $dropdown-link-active-bg:  $prim!default;
 $theme-colors:(
     "primary": $prim,
@@ -50,7 +52,9 @@ $custom-colors: (
   "gray" : $graycustom,
   "lightg": $green,
   'pink': $pink,
-  'brown': $brown
+  'brown': $brown,
+  "pcolor": $pcolor,
+  "lteal" : $lteal
 );
 
 // Merge the maps

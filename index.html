@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header class="fixed-top rounded-bottom-5">
-        <nav class="navbar navbar-expand-lg py-2">
+    <header class="fixed-top py-3">
+        <nav class="navbar navbar-expand-lg py-2 position-relative">
             <div class="container">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand position-absolute" href="index.html">
                 <img src="assets/imgs/logo.png" alt="" width="auto" height="60" class="rounded-circle">
               </a>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,7 @@
                 </div>
               </button>
               <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5 pe-5">
                   <li class="nav-item  me-4">
                     <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
                   </li>
@@ -50,7 +50,8 @@
                     <a class="nav-link text-white" aria-current="page" href="accomodation.html">Rooms</a>
                   </li>
                 </ul>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 ps-5">
                   <li class="nav-item  me-4">
                     <a class="nav-link text-white" aria-current="page" href="accomodation.html">Blog</a>
                   </li>
@@ -74,73 +75,429 @@
         
     </header>
 
+    <main>
+      <section id="carousel">
+        <div class="container-fluid p-0 overflow-x-hidden">
+          <div class="row position-relative">
+            <div id="carous" class="owl-carousel owl-theme">
+            
+              <div class="item position-relative">
+                <div id="bg-img" style="
+                  background: url('assets/imgs/accommodation-2.jpg') center/cover no-repeat;
+                "></div>
 
-   
-
-
-    <footer class="bg-primary">
-      <div class="container">
-        <div class="main-footer">
-          <div class="row row-cols-1 row-cols-lg-3 g-4">
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <h1 class="text-white display-5">Embrace Serenity at The Quiet Place Farm Resort -</h1>
-              <a href="#!" class="btn btn-black px-5 py-3 mt-4">Read More</a>
+                <div class="img-overlay"></div>
+              </div>
+  
+              <div class="item position-relative">
+                
+                <div id="bg-img" style="
+                background: url('assets/imgs/pexels-pixabay-164595.jpg') center/cover no-repeat;
+                "></div>
+                <div class="img-overlay"></div>
+              </div>
+  
+              <div class="item position-relative">
+                <div id="bg-img" style="
+                background: url('assets/imgs/pexels-ib-rama-5383850.jpg') center/cover no-repeat;
+                "></div>
+                <div class="img-overlay"></div>
+              </div>
+  
             </div>
 
-            <div class="col-12 col-md-6 col-lg-3 ">
-              <div class="ps-lg-5 ms-lg-5">
-                <h6 class="text-black text-uppercase mb-4">Quick Links</h6>
-                <ul class="nav flex-column text-center text-md-start ">
-                  <li class="nav-item mb-3">
-                    <a class="text-white fs-6 active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="accommodation.html">Accommodation</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="room.html">Rooms</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="about.html">About Us</a>
-                  </li>
-                  <li class="nav-item mb-3">
-                      <a class="text-white fs-6 active" aria-current="page" href="contact.html">Contact Us</a>
-                  </li>
-                </ul>
+            <div class="col-10 mx-auto text-center text-white">
+              <div class="carous-wrap position-absolute">
+                <h1 class="display-3">Discover Tranquility: Nature's Healing Embrace</h1>
+                <h5 class="mt-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae vitae praesentium ut corporis consequuntur! Labore maxime nesciunt quaerat magnam eius.</h5>
               </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-3 text-white">
-              <div class="resort-address mb-5">
-                <h6 class=" text-black mb-4">RESORT ADDRESS:</h6>
-                <p><i class="bi bi-geo-alt me-2"></i>Km. 14 Barangay Tabunan, Bago City, Negros Occidental, 6101 Philippines</p>
-                <p><i class="bi bi-telephone-outbound me-2"></i> + 63 34 731 0100</p>
-              </div>
-              <div class="sales-address">
-                <h6 class=" text-black mb-4">SALES OFFICE ADDRESS:</h6>
-                <p><i class="bi bi-geo-alt me-2"></i>D. C. Cruz Building. Magsaysay Avenue, Bacolod City, 6100 Philippines</p>
-                <p><i class="bi bi-telephone-outbound me-2"></i> + 63 34 707 7011</p>
-                <p><i class="bi bi-printer me-2"></i> + 63 34 707 0017</p>
-              </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-3">
-              <h4 class="fw-bold text-white mb-4">Subscribe to our newsletter</h4>
-              <div class="input-group mb-3">
-                <input type="text" class="form-control px-3 py-3" placeholder="Your email...">
-                <button type="submit" class="btn btn-black px-4 text-primary"><i class="bi bi-send me-2"></i>Submit</button>
+            <div id="soc-med" class="col-10 mx-auto text-center">
+              <div class="position-absolute">
+                <div class="d-flex flex-row-lg gap-4 ">
+                  <a href="#!" class="text-decoration-none fs-4 mb-4" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="#!" class="text-decoration-none fs-4 mb-4" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="#!" class="text-decoration-none fs-4 mb-4" target="_blank"><i class="bi bi-twitter"></i></a>
+                </div>
               </div>
             </div>
 
           </div>
         </div>
-        <div class="text-gray">
-          <hr>
+       
+      </section>
+
+      <section id="welcome"style="background-image: url('assets/imgs/pattern-teal-8.png');">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 mx-auto text-center">
+              <h6 class="text-uppercase text-black title-sub">About us</h6>
+              <h1 class="text-primary">A best place to enjoy and learn nature with tranquility</h1>
+            </div>
+            <div class="col-12 col-lg-10 mx-auto text-center mt-5">
+              <h6 class="lh-lg text-pcolor monts">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec maurisac orci tincidunt faucibus nec nec est. Etiam dapibus ultrices accumsan. Vestibulum et dignissim diam,vel vestibulumnisi. Nullam elementum tellus eu fermentum pharetra. In hac habitasse</h6>
+            </div>
+
+            <div class="welcome-imgs-wrap mt-5 pt-4">
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <img src="assets/imgs/activities.jpg" alt="" class="rounded-4">
+                </div>
+                <div class="col-12 col-lg-4">
+                  <img src="assets/imgs/pexels-max-rahubovskiy-7061659.jpg" alt="" class="rounded-4">
+                </div>
+                <div class="col-12 col-lg-3">
+                  <img src="assets/imgs/pexels-pixabay-164595.jpg" alt="" class="rounded-4">
+                </div>
+              </div>
+            </div>
+            <div class="col text-end mt-5">
+              <a href="#!" class="ms-auto btn btn-transparent text-uppercase px-4 py-3"><i class="bi bi-arrow-right me-2"></i> Read More</a>
+            </div>
+          </div>
         </div>
-        
-        <div class="row text-center text-white">
-          <p><small>Copyright © 2004 All rights reserved. For Comments and Suggestions?&nbsp;&nbsp;Email us at: <a class="text-black" href="mailto:info@thequietplace.com.ph">info@thequietplace.com.ph</a> </small></p>
+      </section>
+
+      <section id="accommodation" class="bg-primary">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 my-auto">
+
+              <div class="header-accom">
+                <h6 class="text-uppercase text-black title-sub">Discover our room</h6>
+                <h1 class="text-lteal">A best place to enjoy and learn nature with tranquility</h1>
+                <p class="lh-lg text-lteal monts mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec maurisac orci tincidunt faucibus nec nec est. Etiam dapibus ultrices accumsan. Vestibulum et dignissim diam,vel vestibulumnisi. Nullam elementum tellus eu fermentum pharetra. In hac habitasse</p>
+              </div>
+
+              <div class="accom-room mt-5 pt-3">
+                <div class="d-flex flex-column gap-4">
+
+                  <a href="#!" class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/pexels-jonathan-borba-3144580.jpg" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-lteal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit sunt tempora repellat alias, eveniet fugit?</h5>
+                      </div>
+                    </div>
+                  </a>
+
+                  <a href="#!" class="text-decoration-none">
+                    <div class="d-flex align-items-center">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/pexels-pixabay-271643.jpg" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-lteal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit sunt tempora repellat alias, eveniet fugit?</h5>
+                      </div>
+                    </div>
+                  </a>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 px-lg-5 my-auto">
+              <div class="accom-imgs-wrap">
+                <div class="row row-cols-2 g-4 ">
+                  <div class="col position-relative">
+                    <img class="accom-img-1 rounded-4" src="assets/imgs/pexels-pixabay-164595.jpg" alt="">
+                  </div>
+                  <div class="col position-relative mt-auto">
+                    <img class="accom-img-2 rounded-4 position-absolute" src="assets/imgs/pexels-pixabay-271643.jpg" alt="">
+                  </div>
+                  <div class="col position-relative">
+                    <img class="accom-img-3 rounded-4" src="assets/imgs/pexels-christopher-moon-12836470.jpg" alt="">
+                  </div>
+                  <div class="col position-relative text-end">
+                    <div class="btn-accom position-absolute">
+                      <a href="#!" class="ms-auto btn btn-transparent text-uppercase px-4 py-3 text-lteal"><i class="bi bi-arrow-right me-2"></i> Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" style="background-image: url('assets/imgs/pattern-teal-8.png');">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-5">
+
+              <h1 class="text-primary">A best place to enjoy and learn nature with tranquility</h1>
+              <p class="lh-lg text-pcolor monts mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec maurisac orci tincidunt faucibus nec nec est. Etiam dapibus ultrices accumsan. Vestibulum et dignissim diam,vel vestibulumnisi. Nullam elementum tellus eu fermentum pharetra. In hac habitasse</p>
+            
+              <div class="row row-cols-2 g-4 serv-cont-imgs mt-5">
+                <div class="col">
+                  <img class="rounded-4" src="assets/imgs/pexels-tom-fisk-4856507.jpg" alt="">
+                </div>
+                <div class="col">
+                  <img class="rounded-4" src="assets/imgs/senior-asian-farmer-harvesting-fresh-sweet-yellow-marian-plums-gandaria-fruit-maprang-mayongchit-exotic-tropical-fruits.jpg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+              <div class="row">
+
+               <div class="service-icons">
+                <div class="row row-cols-lg-3 g-4">
+
+                  <div class="col">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/leaves.png" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-primary">Agricultural Experience</h5>
+                        <p class="text-pcolor mt-3 monts">Engage in hands-on farm activities, exploring sustainable farming practices.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/spa-candles.png" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-primary">Nature Immersion Package</h5>
+                        <p class="text-pcolor mt-3 monts">Immerse in tranquility with room accommodation, guided nature walks, and bird sanctuaries.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/culinary.png" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-primary">Gastronomic Delights</h5>
+                        <p class="text-pcolor mt-3 monts">Indulge in farm-to-table dining, savoring dishes crafted from locally sourced ingredients.</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/lotus-flower.png" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-primary">Herbal Tours</h5>
+                        <p class="text-pcolor mt-3 monts">Explore nature's remedies with guided herbal excursions.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/fruit.png" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-primary">Fruit Picking Adventure</h5>
+                        <p class="text-pcolor mt-3 monts">Harvest your own fruits for a joyful, organic experience in our orchards.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="d-flex">
+                      <div class="flex-shrink-0">
+                        <img class="rounded-4" src="assets/imgs/knowledge.png" alt="...">
+                      </div>
+                      <div class="flex-grow-1 ms-3">
+                        <h5 class="text-primary">Educational Workshops</h5>
+                        <p class="text-pcolor mt-3 monts">Enrich your mind with workshops covering agriculture, sustainability, and nature conservation.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+               </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="others" class="bg-primary position-relative">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-12 col-lg-7 text-start">
+              <h1 class="text-lteal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est harum aliquid, soluta atque velit quo!</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-9">
+              <p class="lh-lg text-lteal monts mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec maurisac orci tincidunt faucibus nec nec est. Etiam dapibus ultrices accumsan. Vestibulum et dignissim diam,vel vestibulumnisi. Nullam elementum tellus eu fermentum pharetra. In hac habitasse</p>
+            </div>
+            <div class="col-12 col-lg-3 text-lg-end my-auto">
+              <a href="#!" class="ms-auto text-decoration-none text-uppercase px-4 py-3 text-lteal"><i class="bi bi-arrow-right me-2"></i> Read More</a>
+            </div>
+          </div>
+          <div class="other-img-wrap position-absolute w-100 mt-4">
+            <img src="assets/imgs/pexels-manuel-barros-2403017.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="bg-lteal">
+        <div class="container">
+          <div class="row">
+            <div class="col-8 mx-auto text-center">
+              <h6 class="text-uppercase text-black title-sub">Explore</h6>
+              <h1 class="text-primary">Our Latest Blog</h1>
+            </div>
+          </div>
+
+          <div class="row mt-5 pt-4">
+
+            <div class="col-12 col-lg-4">
+              <div class="card border-0 bg-transparent">
+                <img src="assets/imgs/pexels-elena-19657861.jpg" alt="" class="rounded-4">
+
+                <div class="card-body mt-4">
+                  <h6 class="text-pcolor"><small>Feb 04, 2024</small></h6>
+                  <h4 class="text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum</h4>
+                  <div class="mt-4">
+                    <a href="#!" class="text-decoration-none text-pcolor text-uppercase">Continue <i class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="card border-0 bg-transparent">
+                <img src="assets/imgs/pexels-enric-cruz-lópez-6039237.jpg" alt="" class="rounded-4">
+
+                <div class="card-body mt-4">
+                  <h6 class="text-pcolor"><small>Feb 04, 2024</small></h6>
+                  <h4 class="text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum</h4>
+                  <div class="mt-4">
+                    <a href="#!" class="text-decoration-none text-pcolor text-uppercase">Continue <i class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4">
+              <div class="card border-0 bg-transparent">
+                <img src="assets/imgs/pexels-artphotofil-10096622.jpg" alt="" class="rounded-4">
+
+                <div class="card-body mt-4">
+                  <h6 class="text-pcolor"><small>Feb 04, 2024</small></h6>
+                  <h4 class="text-primary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum</h4>
+                  <div class="mt-4">
+                    <a href="#!" class="text-decoration-none text-pcolor text-uppercase">Continue <i class="bi bi-arrow-right ms-2"></i></a>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col text-center">
+              <a href="#!" class="ms-auto btn btn-transparent text-uppercase px-4 py-3 text-lteal"><i class="bi bi-arrow-right me-2"></i> Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+   
+
+    <footer class="bg-primary"  style="background-image: url('assets/imgs/pattern-white.png');">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 position-relative">
+            <img src="assets/imgs/logo.png" alt="" class="footer-logo position-absolute">
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-12 col-lg-3">
+            <div class="d-flex mb-4">
+              <div class="flex-shrink-0">
+                <i class="bi bi-geo-alt text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <p>Km. 14 Barangay Tabunan, Bago City, Negros Occidental, 6101 Philippines</p>
+                <p>+ 63 34 731 0100</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="flex-shrink-0">
+                <i class="bi bi-geo-alt text-lteal fs-4"></i>
+              </div>
+              <div class="flex-grow-1 ms-3 text-lteal">
+                <p>D. C. Cruz Building. Magsaysay Avenue, Bacolod City, 6100 Philippines</p>
+                <p>+ 63 34 707 7011</p>
+                <p>+ 63 34 707 0017</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <ul class="nav flex-column text-center text-md-start ms-lg-5">
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Site Map</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Terms and Condition</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <ul class="nav flex-column text-center text-md-start ms-lg-5">
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Home</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Rooms</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Blog</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">About</a>
+              </li>
+              <li class="nav-item mb-3">
+                <a class="nav-link text-lteal fs-6 active text-uppercase" aria-current="page" href="#!">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <h4 class="text-lteal mb-4">Sign up to our newsletter</h4>
+            <input type="text" class="form-control px-3 py-2" placeholder="Your email...">
+            <button type="submit" class="btn btn-black w-100 px-4 text-primary mt-3 py-2"><i class="bi bi-send me-2"></i>Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div id="soc-med" class="mt-5 pt-4">
+              <div class="d-flex flex-row justify-content-center text-lteal gap-4 ">
+                <a href="#!" class="text-decoration-none fs-4 mb-4 text-lteal" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="#!" class="text-decoration-none fs-4 mb-4 text-lteal" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#!" class="text-decoration-none fs-4 mb-4 text-lteal"  target="_blank"><i class="bi bi-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-lteal text-center">
+            <p>Copyright © 2024 All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
