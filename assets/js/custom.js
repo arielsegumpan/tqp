@@ -49,13 +49,14 @@ $(document).ready(() => {
 
 
     let nat1 = $('#nat-carous1');
-
+    let nat2 = $('#nat-carous2');
+    // carousel slider
     nat1.owlCarousel({
         touchDrag  : false,
         mouseDrag  : false,
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         center:true,
         dots:false,
         autoplayTimeout: 10000,
@@ -63,7 +64,6 @@ $(document).ready(() => {
         fluidSpeed: true,
         autoplaySpeed: 6000,
         smartSpeed:3000,
-        navText : ['<i class="bi bi-chevron-left fs-5 text-white"></i>','<i class="bi bi-chevron-right fs-5 text-white"></i>'],
         responsive:{
             0:{
                 items:1
@@ -76,6 +76,48 @@ $(document).ready(() => {
             }
         }
     });
+    nat2.owlCarousel({
+        touchDrag  : false,
+        mouseDrag  : false,
+        loop:true,
+        margin:10,
+        nav:false,
+        dots: false,
+        center:true,
+        dots:false,
+        autoplayTimeout: 10000,
+        autoplay:true,
+        fluidSpeed: true,
+        autoplaySpeed: 6000,
+        smartSpeed:3000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+
+    // control next and prev button sa carousel speed 3 sec
+    $('#nextBtn-1').click(function() {
+        nat1.trigger('next.owl.carousel',[3000]);
+    })
+    $('#prevBtn-1').click(function() {
+        nat1.trigger('prev.owl.carousel', [3000]);
+    })
+    $('#nextBtn-2').click(function() {
+        nat2.trigger('next.owl.carousel',[3000]);
+    })
+    $('#prevBtn-2').click(function() {
+        nat2.trigger('prev.owl.carousel', [3000]);
+    })
+
+
 
 
     // Add hover event handlers

@@ -237,7 +237,27 @@ button.navbar-toggler.collapsed{
   }
 
 
+  // NATURE WALK PAGE
+  section#nature-sec-2{
+    button#prevBtn-1, button#nextBtn-1{
+      padding: 16px 22px;
+      border: 3px solid $light-teal;
+      border-radius: 100%;
+      color: $light-teal;
+      font-size:1.5rem!important;
+    }
+  }
 
+  section#nature-sec-5{
+    button#prevBtn-2, button#nextBtn-2{
+      padding: 16px 22px;
+      border: 3px solid $prim;
+      border-radius: 100%;
+      color: $prim;
+      font-size:1.5rem!important;
+    }
+
+  }
 }
 
 
@@ -538,21 +558,114 @@ button.navbar-toggler.collapsed{
       section#nature-sec-2{
         padding: 10rem 0;
 
+        button#prevBtn-1, button#nextBtn-1{
+          padding: 16px 22px;
+          border: 3px solid $light-teal;
+        }
+
+
         #nat-carous1{
           .item{
-            height: 400px;
+            height: auto;
             width: 100%;
-            object-fit: cover;
+           
+
+            img{
+              border-radius: 16px;
+              height: 500px;
+              width: 100%;
+              object-fit: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+          }
+        }
+
+       
+      } 
+
+      section#nature-sec-3{
+        padding: 10rem 0;
+        background-repeat: repeat;
+        background-size: 50%;
+
+        img{
+          width: 100%;
+          background-size: cover;
+          object-fit: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        img.img-1{
+          height: 505px;
+        }
+
+        img.img-2{
+          height: 240px;
+        }
+
+        img.img-3{
+          height: 240px;
+        }
+
+      }
+
+      section#nature-sec-4{
+        padding: 10rem 0;
+        background-repeat: repeat;
+        background-size: 50%;
+
+        .row.row-cols-2.g-4.imgs-2{
+          img{
+            width: 100%;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            object-fit: cover;
+          }
+
+          img.img4-1{
+            width: 100%;
+            height: 400px;
+          }
+          img.img4-2{
+            width: 100%;
+            height:390px;
+            position: absolute;
+            bottom: -6rem;
+          }
+        
+        }
+      }
+      section#nature-sec-5{
+        padding: 10rem 0;
+
+        button#prevBtn-2, button#nextBtn-2{
+          padding: 16px 22px;
+          border: 3px solid $prim;
+        }
+
+        #nat-carous2{
+          .item{
+            height: auto;
+            width: 100%;
+           
+            img{
+              border-radius: 16px;
+              height: 500px;
+              width: 100%;
+              object-fit: cover;
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
           }
         }
-      } 
 
 
-
-
+      }
     }
     // footer
     footer{
