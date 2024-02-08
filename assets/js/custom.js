@@ -151,9 +151,6 @@ $(document).ready(() => {
         bird1.trigger('prev.owl.carousel', [3000]);
     })
 
-
-
-
     // Add hover event handlers
     $('.dropdown').hover(
         function () {
