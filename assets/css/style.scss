@@ -186,7 +186,6 @@ ul{
 .bg_nav_white {
     background-color: $light-teal;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
-    transition: 0.5s ease-in-out;
 
     ul{
       li{
@@ -199,6 +198,7 @@ ul{
 }
 header.fixed-top{
     transition: 0.5s ease-in-out;
+
 }
 .navbar-toggler:focus {
     outline: none!important; 
@@ -218,37 +218,237 @@ button.navbar-toggler.collapsed{
       letter-spacing: 5px;
     }
   }
+
+  header.fixed-top{
+    background-color: $light-teal!important;
+
+    ul{
+      li{
+        a{
+          color: $dark-gray!important;
+          transition: .3s ease;
+        }
+      }
+    }
+  }
+
+  a.navbar-brand{
+    top: unset;
+    left:unset;
+    transform: unset;
+    position: relative!important;
+    
+    img.img-1{
+      z-index: 3;
+    }
+    img.img-2{
+      top:-2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 80px;
+      z-index: 1;
+    }
+  }
+
   // carousel
   section#carousel{
-    .owl-nav{
-      position: absolute;
-      left:6rem;
-      bottom: 5rem;
-      button.owl-prev, button.owl-next{
-          margin: 0 .3rem;
-          i{
-              position: relative;
-              z-index: 1;
-              padding: 15px 18px;
-              border: 3px solid $white;
-              border-radius: 100%;
-              color: $prim;
-              font-size:1.5rem!important;
+    height: 105svh;
+    width: 100%;
+    z-index: -1;
+    
+    #mainCarous{
+      button#mprevBtn, button#mnextBtn{
+        z-index: 888;
+        margin: 0 0;
+        outline:none!important;
+        box-shadow:none!important;
+        border: none;
+
+        i{
+            position: relative;
+            z-index: 5;
+            padding: 15px 18px;
+            border: 3px solid $white;
+            border-radius: 100%;
+            color: $light-teal;
+            font-size:1.5rem!important;
+        }
+    }
+    }
+
+    .carous-wrap{
+      top: 56%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 5;
+      width: 85%;
+      h1, h5{
+        text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+
+      }
+      // carousel font
+      h1.display-3{
+        font-size: 2rem;
+      }
+    }
+// -----
+    #carous{
+      .item{
+          width: 100%;
+          height: 105svh;
+          overflow: hidden;
+
+         #bg-img{
+          height:  105svh;
+          width: 100%;
+          overflow: hidden;
+         }
+
+          .content{
+             width: 100%;
+              left: 50%;
+              top:50%;
+              transform: translate(-50%,-50%);
           }
       }
     }
 
-    .carous-wrap{
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      z-index: 5;
-      h1, h5{
-        text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+    #soc-med{
+      a{
+        color: $white;
+        transition: $trans;
+      }
+
+      a:hover{
+        color: $prim;
+      }
+    }
+  }
+
+   // INDEX PAGE
+  section#welcome{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 30%;
+
+    .welcome-imgs-wrap{
+      img{
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  section#accommodation{
+    padding: 5rem 0;
+
+    .accom-imgs-wrap{
+      img{
+        width: 100%;
+        object-fit: cover;
+      }
+      
+      img.accom-img-1{
+        height: 250px;
+      }
+      img.accom-img-2{
+        height: 350px;
+        width: 87%;
+        top: -12rem;
+      }
+      img.accom-img-3{
+        height: 250px;
+        bottom: 0;
+      }
+
+      .btn-accom {
+        top: 10rem;
+        right: 0;
+      }
+
+    }
+
+    .accom-room{
+      img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        background-size: cover;
+      }
+    }
+  }
+
+  section#service{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 30%;
+
+    .service-icons{
+      img{
+        width: 100%;
+        height: 60px;
       }
     }
 
+    .serv-cont-imgs{
+      img{
+        width: 100%;
+        height: 150px;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+    }
   }
+
+  section#others{
+    padding: 5rem 0 6rem 0;
+    overflow: unset;
+
+
+    .other-img-wrap{
+      overflow: hidden;
+      left: 50%;
+      transform: translateX(-50%);
+      img{
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        border-radius: 32px;
+      }
+    }
+
+   
+  }
+
+  section#blog{
+    padding: 10rem 0 8rem 0;
+
+    .card{
+      img{
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      .card-body{
+        a{
+          transition: $trans;
+          padding-left: 0;
+        }
+        a:hover{
+          padding-left: .5rem;
+        }
+      }
+      
+    }
+  }
+  // END OF INDEX PAGE
+
+
 
 
   // NATURE WALK PAGE
@@ -288,9 +488,8 @@ button.navbar-toggler.collapsed{
 
 
   // CUISINE
-  section#food-gallery{
+  section#food-gallery,  section#food-gallery-2{
     padding: 0 0 5rem 0;
-
     .container-img {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -351,6 +550,22 @@ button.navbar-toggler.collapsed{
   }
 
 
+   // footer
+   footer{
+    background-repeat: repeat;
+    background-size: 90%;
+    .foot-cont-wrap{
+      padding: 6rem 0 0 0; //def 10rem top 3rm bottom
+    }
+    .footer-logo{
+      width: auto;
+      height: 120px;
+      top:-9.8rem; //def -13.8rem
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
 }
 
 
@@ -396,7 +611,6 @@ button.navbar-toggler.collapsed{
         z-index: 1;
       }
     }
-
 
     // INDEX PAGE
     section#carousel{
@@ -576,7 +790,6 @@ button.navbar-toggler.collapsed{
         
       }
     }
-
     // END OF INDEX PAGE
 
     // NATURE WALK PAGE
@@ -586,10 +799,13 @@ button.navbar-toggler.collapsed{
       background-size: cover;
       background-position: center;
       height: 75svh;
-
+ 
       div#jumb-col{
         height: 75svh;
 
+        h1, p {
+          text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+        }
 
         .jumb-wrap{
           top: 50%;
@@ -660,7 +876,6 @@ button.navbar-toggler.collapsed{
         }
       }
     }
-
     section#nature-sec-2{
       padding: 10rem 0;
       background-repeat: repeat;
@@ -691,7 +906,6 @@ button.navbar-toggler.collapsed{
 
      
     } 
-
     section#nature-sec-3{
       padding: 10rem 0;
       background-repeat: repeat;
@@ -718,7 +932,6 @@ button.navbar-toggler.collapsed{
       }
 
     }
-
     section#nature-sec-4{
       padding: 10rem 0;
       background-repeat: repeat;
@@ -867,7 +1080,6 @@ button.navbar-toggler.collapsed{
         }
       }
     }
-
     section#well-sec-3{
       padding: 10rem 0;
       background: center/over repeat;
@@ -892,7 +1104,6 @@ button.navbar-toggler.collapsed{
         height: 240px;
       }
     }
-
     section#well-sec-4{
       padding: 10rem 0;
       .row.row-cols-2.g-4.imgs-2{
@@ -916,15 +1127,49 @@ button.navbar-toggler.collapsed{
       }
     }
 
-   // CUISINE
-   section#food-gallery{
-    padding: 0 0 12rem 0;
+    // CUISINE
+    section#food-gallery{
+      padding: 0 0 12rem 0;
 
-    .container-img {
-      grid-template-columns: repeat(4, 1fr);
+      .container-img {
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
 
-  }
+    section#food-gallery-2{
+      padding: 10rem 0;
+  
+        .container-img {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+    // BLOG PAGE
+    section#blog-wrap{
+      padding: 10rem 0;
+      background: center/over repeat;
+      background-size: 30%;
+
+      
+      .card{
+        position: relative;
+        overflow: hidden;
+        transition: $trans;
+        img{
+          transition: $trans;
+          scale: 1;
+          overflow: hidden;
+        }
+        &:hover img{
+          scale: 1.05;
+        }
+        &:hover{
+          box-shadow: -1px 5px 14px -3px rgba(0,0,0,0.14);
+          -webkit-box-shadow: -1px 5px 14px -3px rgba(0,0,0,0.14);
+          -moz-box-shadow: -1px 5px 14px -3px rgba(0,0,0,0.14);
+        }
+      }
+    }
 
     // footer
     footer{

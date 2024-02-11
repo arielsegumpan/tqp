@@ -17,14 +17,14 @@ $(document).ready(() => {
         }
     });
     
-    let owl = $('#carous');
+    let mainCarous = $('#carous');
     // jumbotron carousel
-    owl.owlCarousel({
+    mainCarous.owlCarousel({
         touchDrag  : false,
         mouseDrag  : false,
         loop:true,
         margin:10,
-        nav:true,
+        nav:false,
         center:true,
         dots:false,
         autoplayTimeout: 10000,
@@ -33,7 +33,6 @@ $(document).ready(() => {
         autoplaySpeed: 6000,
         smartSpeed:3000,
         animateIn: 'fadeIn', animateOut: 'fadeOut',
-        navText : ['<i class="bi bi-chevron-left fs-5 text-white"></i>','<i class="bi bi-chevron-right fs-5 text-white"></i>'],
         responsive:{
             0:{
                 items:1
@@ -46,6 +45,12 @@ $(document).ready(() => {
             }
         }
     });
+    $('#mprevBtn').click(function() {
+        mainCarous.trigger('next.owl.carousel',[3000]);
+    })
+    $('#mnextBtn').click(function() {
+        mainCarous.trigger('prev.owl.carousel', [3000]);
+    })
 
 
     let nat1 = $('#nat-carous1');
