@@ -162,4 +162,39 @@ $(document).ready(() => {
             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(300);
         }
     );
+
+
+
+
+    // let container = $('.container-img');
+    // let cards = $('.card');
+  
+    // // Filter gallery based on category
+    // $('#filter-menu').on('click', '.filter-item', function () {
+    //   let selectedFilter = $(this).data('filter');
+    //   let matchingCards;
+  
+    //   if (selectedFilter === 'all') {
+    //     matchingCards = cards;
+    //   } else {
+    //     matchingCards = cards.filter(function () {
+    //       let dataId = $(this).find('a').data('id').toLowerCase();
+    //       return dataId === selectedFilter.toLowerCase();
+    //     });
+    //   }
+  
+    //   // Clear the container
+    //   container.empty();
+  
+    //   // Append matching cards to the container with fadeIn animation
+    //   matchingCards.each(function () {
+    //     $(this).removeClass('fade-out').addClass('fade-in').appendTo(container).hide().fadeIn();
+    //   });
+  
+    //   // Add fade-out class to non-matching cards and fade them out
+    //   cards.not(matchingCards).each(function () {
+    //     $(this).removeClass('fade-in').addClass('fade-out').fadeOut();
+    //   });
+    // });
+      
 })
