@@ -178,26 +178,26 @@ ul{
   li{
     a{
       color: $dark-gray!important;
-      transition: .3s ease;
+      // transition: .3s ease;
     }
   }
 }
 
 .bg_nav_white {
-    background-color: $light-teal;
-    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+    background-color: $light-teal!important;
+    box-shadow: unset!important;
 
     ul{
       li{
         a{
           color: $dark-gray!important;
-          transition: .3s ease;
+          // transition: .3s ease;
         }
       }
     }
 }
 header.fixed-top{
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 
 }
 .navbar-toggler:focus {
@@ -220,13 +220,14 @@ button.navbar-toggler.collapsed{
   }
 
   header.fixed-top{
-    background-color: $light-teal!important;
+    background-color: $light-teal;
 
     ul{
       li{
         a{
           color: $dark-gray!important;
-          transition: .3s ease;
+          text-shadow: 1px 3px 5px rgba(0,0,0,0.15);
+          // transition: .3s ease;
         }
       }
     }
@@ -273,7 +274,7 @@ button.navbar-toggler.collapsed{
             color: $light-teal;
             font-size:1.5rem!important;
         }
-    }
+      }
     }
 
     .carous-wrap{
@@ -448,9 +449,6 @@ button.navbar-toggler.collapsed{
   }
   // END OF INDEX PAGE
 
-
-
-
   // NATURE WALK PAGE
   section#nature-sec-2, section#well-sec-2{
     button#prevBtn-1, button#nextBtn-1{
@@ -460,7 +458,6 @@ button.navbar-toggler.collapsed{
       font-size:1.5rem!important;
     }
   }
-
   section#nature-sec-2{
     button#prevBtn-1, button#nextBtn-1{
       color: $light-teal;
@@ -473,8 +470,6 @@ button.navbar-toggler.collapsed{
       border: 3px solid $prim;
     }
   }
-
-
   section#nature-sec-5{
     button#prevBtn-2, button#nextBtn-2{
       padding: 16px 22px;
@@ -486,7 +481,217 @@ button.navbar-toggler.collapsed{
 
   }
 
+  // NATURE WALK PAGE
+  section#jumbotron{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80svh;
 
+    div#jumb-col{
+      height: 80svh;
+
+      h1, p {
+        text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+      }
+
+      .jumb-wrap{
+        top: 60%;
+        transform: translateY(-50%);
+      }
+    }
+
+
+    .jumb-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100svh;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+        background: linear-gradient(207deg, rgba(0,161,155,0.3551471614036239) 0%, rgba(0,212,255,0.00500710538121496) 70%);
+      }
+      .col-12{
+        z-index: 5;
+      }
+  }
+  section#nature-sec-1{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 90%;
+
+    .imgs-1{
+      img{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      img.img-1{
+        height: 150px;
+      }
+      img.img-2{
+        height: 300px;
+        position: absolute;
+        width:90%;
+        top: -1.5rem;
+      }
+      img.img-3{
+      
+        height: 200px;
+      }
+
+    }
+
+    .imgs-2{
+      img:nth-child(1){
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+      img:nth-child(2){
+        width: 100%;
+        height:150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  section#nature-sec-2{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 90%;
+    button#prevBtn-1, button#nextBtn-1{
+      padding: 16px 22px;
+      border: 3px solid $light-teal;
+    }
+
+
+    #nat-carous1{
+      .item{
+        height: 350px;
+        width: 100%;
+      
+
+        img{
+          border-radius: 16px;
+          height: 350px;
+          width: 100%;
+          object-fit: cover;
+          background: center/cover  no-repeat;
+        }
+      }
+    }
+
+  
+  } 
+  section#nature-sec-3{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 90%;
+
+    img{
+      width: 100%;
+      background-size: cover;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    img.img-1{
+      height: 250px;
+    }
+
+    img.img-2{
+      height: 200px;
+    }
+
+    img.img-3{
+      height: 200px;
+    }
+
+  }
+  section#nature-sec-4{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 90%;
+
+    .row.row-cols-2.imgs-2{
+      img{
+        width: 90%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      img.img4-1{
+        width: 100%;
+        height: 250px;
+      }
+      img.img4-2{
+        width: 90%;
+        height:250px;
+        position: absolute;
+        bottom: -3rem;
+      }
+    
+    }
+  }
+  section#nature-sec-5{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 90%;
+
+    button#prevBtn-2, button#nextBtn-2{
+      padding: 16px 22px;
+      border: 3px solid $prim;
+    }
+
+    #nat-carous2{
+      .item{
+        height: auto;
+        width: 100%;
+      
+        img{
+          border-radius: 16px;
+          height: 330px;
+          width: 100%;
+          object-fit: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+
+  }
+  // BIRD PAGE
+  section#bird-content, section#bird-content-cuisine{
+    padding: 5rem 0 9rem 0;
+    .bird-img{
+      img{
+        height: 300px;
+        width: 100%;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+    }
+  }
+  section#bird-content-cuisine{
+    padding: 5rem 0;
+  }
+
+  
   // CUISINE
   section#food-gallery,  section#food-gallery-2{
     padding: 0 0 5rem 0;
@@ -549,6 +754,16 @@ button.navbar-toggler.collapsed{
       }
   }
 
+  section#food-gallery{
+    padding: 0 0 9rem 0;
+
+ 
+  }
+
+  section#food-gallery-2{
+    padding: 5rem 0;
+
+  }
 
    // footer
    footer{
@@ -571,35 +786,389 @@ button.navbar-toggler.collapsed{
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-    
+
+  a.navbar-brand{
+    top: unset;
+    left:unset;
+    transform: unset;
+  }
+
+  // carousel
+  section#carousel{
+    height: 160svh;
+
+    .carous-wrap{
+      // carousel font
+      h1.display-3{
+        font-size: 2.5rem;
+      }
+    }
+// -----
+    #carous{
+      .item{
+          height: 160svh;
+
+         #bg-img{
+          height:  160svh;
+         }
+      }
+    }
+  }
+
+
+   // INDEX PAGE
+  section#welcome{
+    background-size: 70%;
+
+    .welcome-imgs-wrap{
+      img{
+        height: 320px;
+      }
+    }
+  }
+
+  section#accommodation{
+    padding: 5rem 0;
+
+    .accom-imgs-wrap{
+      img.accom-img-1{
+        height: 250px;
+      }
+      img.accom-img-2{
+        height: 350px;
+        top: -12rem;
+      }
+      img.accom-img-3{
+        height: 250px;
+      }
+      .btn-accom {
+        top: 10rem;
+      }
+
+    }
+
+    .accom-room{
+      img{
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+
+  section#service{
+    padding: 5rem 0;
+    background-size: 70%;
+
+    .service-icons{
+      img{
+        height: 60px;
+      }
+    }
+
+    .serv-cont-imgs{
+      img{
+        height: 150px;
+      }
+    }
+  }
+
+  section#others{
+    padding: 5rem 0 6rem 0;
+    .other-img-wrap{
+      img{
+        height: 150px;
+      }
+    }
+  }
+
+  section#blog{
+    padding: 10rem 0 8rem 0;
+    .card{
+      img{
+        height: 250px;
+      }
+    }
+  }
+  // END OF INDEX PAGE
 
   // CUISINE
   section#food-gallery{
     padding: 0 0 6rem 0;
-
-    .container-img {
+    .container-img { 
       grid-template-columns: repeat(2, 1fr);
     }
-
   }
  }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
-    
+  a.navbar-brand{
+    top: unset;
+    left:unset;
+    transform: unset;
+  }
+
+  // carousel
+  section#carousel{
+    height: 100svh;
+
+    .carous-wrap{
+      // carousel font
+      h1.display-3{
+        font-size: 3.5rem;
+      }
+    }
+// -----
+    #carous{
+      .item{
+          height: 100svh;
+
+         #bg-img{
+          height:  100svh;
+         }
+      }
+    }
+
+    #soc-med{
+      margin-top: 3rem;
+    }
+
+  }
+
+
+   // INDEX PAGE
+  section#welcome{
+    padding: 8rem 0;
+    background-size: 70%;
+
+    .welcome-imgs-wrap{
+      img{
+        height: 320px;
+      }
+    }
+  }
+
+  section#accommodation{
+    padding: 8rem 0;
+
+    .accom-imgs-wrap{
+      img.accom-img-1{
+        height: 250px;
+      }
+      img.accom-img-2{
+        height: 350px;
+        top: -12rem;
+      }
+      img.accom-img-3{
+        height: 250px;
+      }
+      .btn-accom {
+        top: 10rem;
+      }
+
+    }
+
+    .accom-room{
+      img{
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+
+  section#sevrice{
+    padding: 8rem 0;
+    background-size: 70%;
+
+    .service-icons{
+      img{
+        height: 60px;
+      }
+    }
+
+    .serv-cont-imgs{
+      img{
+        height: 150px;
+      }
+    }
+  }
+
+  section#others{
+    padding: 5rem 0 6rem 0;
+    .other-img-wrap{
+      img{
+        height: 150px;
+      }
+    }
+  }
+
+  section#blog{
+    padding: 10rem 0 5rem 0;
+    .card{
+      img{
+        height: 250px;
+      }
+    }
+  }
+  // END OF INDEX PAGE
+
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-    
+
+    // carousel
+    section#carousel{
+      height: 100svh;
+  
+      .carous-wrap{
+        // carousel font
+        h1.display-3{
+          font-size: 3.5rem;
+        }
+      }
+  // -----
+      #carous{
+        .item{
+            height: 100svh;
+  
+           #bg-img{
+            height:  100svh;
+           }
+        }
+      }
+  
+      #soc-med{
+        margin-top: 3rem;
+      }
+  
+    }
+
+    // INDEX PAGE
+    section#welcome{
+      padding: 8rem 0;
+      background-size: 70%;
+
+      .welcome-imgs-wrap{
+        img{
+          height: 320px;
+        }
+      }
+    }
+
+    section#accommodation{
+      padding: 8rem 0;
+
+      .accom-imgs-wrap{
+        img.accom-img-1{
+          height: 250px;
+        }
+        img.accom-img-2{
+          height: 350px;
+          top: -12rem;
+        }
+        img.accom-img-3{
+          height: 250px;
+        }
+        .btn-accom {
+          top: 10rem;
+        }
+
+      }
+
+      .accom-room{
+        img{
+          height: 150px;
+          width: 150px;
+        }
+      }
+    }
+
+    section#sevrice{
+      padding: 8rem 0;
+      background-size: 70%;
+
+      .service-icons{
+        img{
+          height: 60px;
+        }
+      }
+
+      .serv-cont-imgs{
+        img{
+          height: 150px;
+        }
+      }
+    }
+
+    section#others{
+      padding: 5rem 0 6rem 0;
+      .other-img-wrap{
+        img{
+          height: 150px;
+        }
+      }
+    }
+
+    section#blog{
+      padding: 10rem 0 9rem 0;
+      .card{
+        img{
+          height: 250px;
+        }
+      }
+    }
+    // END OF INDEX PAGE
+
+
+    // footer
+    footer{
+
+      background-repeat: repeat;
+      background-size: 30%;
+
+      .foot-cont-wrap{
+        padding: 7rem 0 0 0; //def 10rem top 3rm bottom
+      }
+
+      .container{
+        padding: 0rem 0 .5rem 0;
+      }
+      .footer-logo{
+        width: auto;
+        height: 120px;
+        top:-10.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
  }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .bg_nav_white {
+    background-color: $light-teal!important;
+    color: $dark-gray!important;
+  }
+
+  header.fixed-top{
+    background-color: unset;
+    color: $light-teal;
+    ul{
+      li{
+        a{
+          color: unset!important;
+        }
+      }
+    }
+    
+  }
+
     a.navbar-brand{
       top: -.5rem;
       left: 50%;
       transform: translateX(-50%);
+      position: absolute!important;
       img.img-1{
         z-index: 3;
       }
@@ -640,16 +1209,20 @@ button.navbar-toggler.collapsed{
       }
 
       .carous-wrap{
-        top: 40%;
+        top: 60%;
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 5;
+        width: 50%;
+        h1.display-3{
+          font-size: auto;
+        }
       }
 
       #soc-med{
         
         .position-absolute{
-          top: 70%;
+          top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
           z-index: 5;
@@ -1024,18 +1597,14 @@ button.navbar-toggler.collapsed{
     // BIRD PAGE
     section#bird-content{
       padding: 10rem 0;
-
-
       .bird-img{
-       img{
-        height: 400px;
-        width: 100%;
-        background: center/cover no-repeat;
-        object-fit: cover;
-       }
+        img{
+          height: 400px;
+          width: 100%;
+          background: center/cover no-repeat;
+          object-fit: cover;
+        }
       }
-
-
     }
 
     // CONTACT PAGE
@@ -1175,6 +1744,10 @@ button.navbar-toggler.collapsed{
     footer{
       background-repeat: repeat;
       background-size: 30%;
+
+      .foot-cont-wrap{
+        padding: 0rem 0 0 0; //def 10rem top 3rm bottom
+      }
 
       .container{
         padding: 10rem 0 3rem 0;
