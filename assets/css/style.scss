@@ -226,7 +226,7 @@ button.navbar-toggler.collapsed{
       li{
         a{
           color: $dark-gray!important;
-          text-shadow: 1px 3px 5px rgba(0,0,0,0.15);
+          // text-shadow: 1px 3px 5px rgba(0,0,0,0.15);
           // transition: .3s ease;
         }
       }
@@ -487,10 +487,10 @@ button.navbar-toggler.collapsed{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 80svh;
+    height: 120svh;
 
     div#jumb-col{
-      height: 80svh;
+      height: 120svh;
 
       h1, p {
         text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
@@ -506,7 +506,7 @@ button.navbar-toggler.collapsed{
     .jumb-overlay{
         position: absolute;
         width: 100%;
-        height: 100svh;
+        height: 120svh;
         overflow: hidden;
         top: 50%;
         left: 50%;
@@ -539,7 +539,7 @@ button.navbar-toggler.collapsed{
         height: 300px;
         position: absolute;
         width:90%;
-        top: -1.5rem;
+        top: -1rem;
       }
       img.img-3{
       
@@ -641,7 +641,7 @@ button.navbar-toggler.collapsed{
         width: 90%;
         height:250px;
         position: absolute;
-        bottom: -3rem;
+        bottom: 0rem;
       }
     
     }
@@ -675,6 +675,8 @@ button.navbar-toggler.collapsed{
 
 
   }
+
+
   // BIRD PAGE
   section#bird-content, section#bird-content-cuisine{
     padding: 5rem 0 9rem 0;
@@ -1012,6 +1014,132 @@ button.navbar-toggler.collapsed{
   }
   // END OF INDEX PAGE
 
+  // NATURE WALK PAGE
+  section#jumbotron{
+    height: 50svh;
+
+    div#jumb-col{
+      height: 50svh;
+
+      .jumb-wrap{
+        top: 58%;
+        transform: translateY(-50%);
+      }
+    }
+
+
+    .jumb-overlay{
+        height: 50svh;
+      }
+  }
+  section#nature-sec-1{
+    background-size: 50%;
+    padding: 7rem 0;
+  }
+  section#nature-sec-2{
+    padding: 7rem 0;
+    background-size: 50%;
+
+    img{
+      height: 300px;
+      width: 100%;
+      background: center/cover no-repeat;
+      object-fit: cover;
+    }
+    button#prevBtn-1, button#nextBtn-1{
+      padding: 16px 22px;
+      border: 3px solid $light-teal;
+    }
+
+
+    #nat-carous1{
+      .item{
+        height: 350px;
+
+        img{
+          height: 350px;
+        }
+      }
+    }
+
+  
+  } 
+  section#nature-sec-3{
+    padding: 7rem 0;
+    background-size: 50%;
+
+    img{
+      width: 100%;
+      background-size: cover;
+      object-fit: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    img.img-1{
+      height: 250px;
+    }
+
+    img.img-2{
+      height: 200px;
+    }
+
+    img.img-3{
+      height: 200px;
+    }
+
+  }
+  section#nature-sec-4{
+    padding: 7rem 0;
+
+    .row.row-cols-2.imgs-2{
+      img{
+        width: 90%;
+      }
+
+      img.img4-1{
+        height: 250px;
+      }
+      img.img4-2{
+        height:250px;
+        bottom: -3rem;
+      }
+    
+    }
+  }
+  section#nature-sec-5{
+    padding: 7rem 0;
+    background-repeat: repeat;
+    background-size: 90%;
+
+    button#prevBtn-2, button#nextBtn-2{
+      padding: 16px 22px;
+      border: 3px solid $prim;
+    }
+
+    #nat-carous2{
+      .item{
+        height: auto;
+        width: 100%;
+      
+        img{
+          border-radius: 16px;
+          height: 330px;
+          width: 100%;
+          object-fit: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+
+
+  }
+
+
+
+
  }
 
 // Large devices (desktops, 992px and up)
@@ -1165,7 +1293,7 @@ button.navbar-toggler.collapsed{
   }
 
     a.navbar-brand{
-      top: -.5rem;
+      top: -.3rem;
       left: 50%;
       transform: translateX(-50%);
       position: absolute!important;
@@ -1453,6 +1581,13 @@ button.navbar-toggler.collapsed{
       padding: 10rem 0;
       background-repeat: repeat;
       background-size: 30%;
+
+      
+    img{
+      height: auto;
+    }
+
+
       button#prevBtn-1, button#nextBtn-1{
         padding: 16px 22px;
         border: 3px solid $light-teal;
