@@ -856,6 +856,38 @@ button.navbar-toggler.collapsed{
     }
   }
 
+// WELLNESS
+  section#well-sec-1{
+    padding: 5.25rem 0 9rem 0;
+    // overflow: hidden;
+    background-size: 90%;
+
+    .img-float{
+      width: 100%;
+      margin: 0 auto;
+      z-index: 2;
+      img{
+        height: 200px;
+      }
+    }
+
+  }
+
+  section#well-sec-2{
+    padding: 9rem 0 5rem 0;
+  }
+  section#well-sec-3{
+    background-size: 100%;
+    overflow: hidden;
+    padding: 5rem 0;
+
+    img{
+      width: 100%;
+      height: 200px;
+      background: center/cover no-repeat;
+      object-fit: cover;
+    }
+  }
 
 }
 
@@ -890,7 +922,6 @@ button.navbar-toggler.collapsed{
       }
     }
   }
-
 
    // INDEX PAGE
   section#welcome{
@@ -1052,6 +1083,35 @@ button.navbar-toggler.collapsed{
       }
     }
   }
+
+  // WELLNESS
+  section#well-sec-1{
+    padding: 5.25rem 0 9rem 0;
+    background-size: 100%;
+
+    .img-float{
+      img{
+        width: 500px;
+        height: 200px;
+      }
+    }
+
+  }
+
+  section#well-sec-2{
+    padding: 9rem 0 5rem 0;
+  }
+  section#well-sec-3{
+    background-size: 100%;
+    padding: 5rem 0;
+
+    img{
+      height: 200px;
+    }
+  }
+
+
+
  }
 
 // Medium devices (tablets, 768px and up)
@@ -1168,10 +1228,10 @@ button.navbar-toggler.collapsed{
 
   // NATURE WALK PAGE
   section#jumbotron{
-    height:70svh;
+    height:55svh;
 
     div#jumb-col{
-      height: 70svh;
+      height: 55svh;
 
       .jumb-wrap{
         top: 57%;
@@ -1350,10 +1410,57 @@ button.navbar-toggler.collapsed{
       }
     }
   }
+
+  // WELLNESS
+  section#well-sec-1{
+    padding: 7rem 0 10rem 0;
+    background-size: 50%;
+
+    .img-float{
+      img{
+        width: 600px;
+        height: 250px;
+      }
+    }
+
+  }
+
+  section#well-sec-2{
+    padding: 13rem 0 7rem 0;
+  }
+  section#well-sec-3{
+    background-size: 50%;
+    padding: 5rem 0;
+
+    img{
+      height: 200px;
+    }
+  }
+
+
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+
+  section#jumbotron{
+    height:70svh;
+
+    div#jumb-col{
+      height: 55svh;
+
+      .jumb-wrap{
+        top: 74%;
+        transform: translateY(-50%);
+      }
+    }
+
+
+    .jumb-overlay{
+        height: 70svh;
+      }
+  }
+
 
     // carousel
     section#carousel{
@@ -1539,6 +1646,46 @@ button.navbar-toggler.collapsed{
           img{
             height: 90px;
           }
+        }
+      }
+    }
+
+
+     // WELLNESS
+    section#well-sec-1{
+      padding: 7rem 0 10rem 0;
+      background-size: 50%;
+
+      .img-float{
+        img{
+          width: 600px;
+          height: 250px;
+        }
+      }
+
+    }
+
+    section#well-sec-2{
+      padding: 13rem 0 7rem 0;
+    }
+    section#well-sec-3{
+      background-size: 50%;
+      padding:8rem 0;
+
+      img{
+        height: 200px;
+      }
+    }
+
+    // BIRD PAGE
+    section#bird-content{
+      padding: 8rem 0 11rem 0;
+      .bird-img{
+        img{
+          height: 300px;
+          width: 100%;
+          background: center/cover no-repeat;
+          object-fit: cover;
         }
       }
     }
@@ -1772,17 +1919,17 @@ button.navbar-toggler.collapsed{
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 75svh;
+      height: 70svh;
  
       div#jumb-col{
-        height: 75svh;
+        height: 70svh;
 
         h1, p {
           text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
         }
 
         .jumb-wrap{
-          top: 50%;
+          top: 53%;
           transform: translateY(-50%);
         }
       }
