@@ -185,8 +185,7 @@ ul{
 
 .bg_nav_white {
     background-color: $light-teal!important;
-    box-shadow: unset!important;
-
+    box-shadow: 0px 2px 15px -3px rgba(0,0,0,0.20);
     ul{
       li{
         a{
@@ -198,7 +197,7 @@ ul{
 }
 header.fixed-top{
     transition: 0.2s ease-in-out;
-
+   
 }
 .navbar-toggler:focus {
     outline: none!important; 
@@ -330,7 +329,7 @@ button.navbar-toggler.collapsed{
   section#welcome{
     padding: 5rem 0;
     background-repeat: repeat;
-    background-size: 30%;
+    background-size: 90%;
 
     .welcome-imgs-wrap{
       img{
@@ -383,7 +382,7 @@ button.navbar-toggler.collapsed{
   section#service{
     padding: 5rem 0;
     background-repeat: repeat;
-    background-size: 30%;
+    background-size:90%;
 
     .service-icons{
       img{
@@ -497,7 +496,7 @@ button.navbar-toggler.collapsed{
       }
 
       .jumb-wrap{
-        top: 60%;
+        top: 58%;
         transform: translateY(-50%);
       }
     }
@@ -733,17 +732,8 @@ button.navbar-toggler.collapsed{
         background: #ffffff;
         transition: $trans;
         overflow: hidden;
-        // h6{
-        //     transition: $trans;
-        //     bottom: -3rem;
-        //     padding: 0 1.5rem;
-        // }
 
       }
-
-    //   .card-image:hover h6{
-    //     bottom: 1rem;
-    //   }
 
       .card-image img {
         display: block;
@@ -758,13 +748,10 @@ button.navbar-toggler.collapsed{
 
   section#food-gallery{
     padding: 0 0 9rem 0;
-
- 
   }
 
   section#food-gallery-2{
-    padding: 5rem 0;
-
+    padding: 5rem 0 8rem 0;
   }
 
    // footer
@@ -782,6 +769,93 @@ button.navbar-toggler.collapsed{
       transform: translateX(-50%);
     }
   }
+
+
+  // CONTACT PAGE
+  section#contact{
+    padding: 5rem 0 7rem 0; 
+    iframe{
+      height: 300px;
+    }
+    img{
+      width: 100%;
+      height: 150px;
+      background: center/cover no-repeat;
+      object-fit: cover;
+    }
+  }
+
+  // ABOUT PAGE
+  main#about{
+    section#about-sec-1{
+      padding: 5rem 0;
+      background-size: 90%;
+      img.about-img1{
+        width: 100%;
+        height: 200px;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+
+      img.about-img-2,  img.about-img-1{
+        width: 100%;
+        height: 150px;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+
+      img.about-img-3,  img.about-img-4{
+        width: 100%;
+        height: 280px;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+   
+    }
+
+    section#nature-sec-3{
+      padding: 5rem 0 8rem 0;
+    }
+  }
+
+  // BLOG
+  section#blog-wrap{
+    padding: 5rem 0;
+
+    .card{
+      position: relative;
+      overflow: hidden;
+      transition: $trans;
+      img{
+        transition: $trans;
+        scale: 1;
+        overflow: hidden;
+
+        height: 200px;
+      }
+      &:hover img{
+        scale: 1.05;
+      }
+      &:hover{
+        box-shadow: -1px 5px 14px -3px rgba(0,0,0,0.14);
+        -webkit-box-shadow: -1px 5px 14px -3px rgba(0,0,0,0.14);
+        -moz-box-shadow: -1px 5px 14px -3px rgba(0,0,0,0.14);
+      }
+    }
+
+    div#aside{
+      padding: 0 0 5rem 0;
+      div#featured_prod_aside{
+        img{
+          width: 100%;
+          height: 150px;
+          background: center/cover no-repeat;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
 
 }
 
@@ -900,6 +974,84 @@ button.navbar-toggler.collapsed{
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  section#food-gallery-2{
+    padding: 5rem 0 8rem 0;
+  }
+
+  section#jumbotron{
+    height: 115svh;
+
+    div#jumb-col{
+      height: 115svh;
+
+
+      .jumb-wrap{
+        top: 60%;
+        transform: translateY(-50%);
+      }
+    }
+
+    .jumb-overlay{
+        height: 115svh;
+      }
+  }
+  // CONTACT PAGE
+  section#contact{
+    padding: 5rem 0 8rem 0; 
+    iframe{
+      height: 300px;
+    }
+    img{
+      height: 200px;
+    }
+  }
+
+
+  main#about{
+    section#about-sec-1{
+      padding: 5rem 0;
+      background-size: 90%;
+      img.about-img1{
+        height: 200px;
+      }
+
+      img.about-img-2,  img.about-img-1{
+        height: 180px;
+      }
+
+      img.about-img-3,  img.about-img-4{
+        height: 250px;
+      }
+   
+    }
+
+    section#nature-sec-3{
+      padding: 5rem 0 8rem 0;
+
+      iframe{
+        height: 300px;
+      }
+    }
+  }
+
+  section#blog-wrap{
+    .card{
+      img{
+        width: 100%;
+        height: 250px;
+      }
+    }
+
+    div#aside{
+      padding: 0 0 5rem 0;
+      div#featured_prod_aside{
+        img{
+          height: 150px;
+        }
+      }
+    }
+  }
  }
 
 // Medium devices (tablets, 768px and up)
@@ -1016,20 +1168,20 @@ button.navbar-toggler.collapsed{
 
   // NATURE WALK PAGE
   section#jumbotron{
-    height: 50svh;
+    height:70svh;
 
     div#jumb-col{
-      height: 50svh;
+      height: 70svh;
 
       .jumb-wrap{
-        top: 50%;
+        top: 57%;
         transform: translateY(-50%);
       }
     }
 
 
     .jumb-overlay{
-        height: 50svh;
+        height: 70svh;
       }
   }
   section#nature-sec-1{
@@ -1138,8 +1290,66 @@ button.navbar-toggler.collapsed{
   }
 
 
+  // CONTACT PAGE
+  section#contact{
+    padding: 8rem 0 9rem 0; 
+    iframe{
+      height: 380px;
+    }
+    img{
+      width: 100%;
+      height: 250px;
+      background: center/cover no-repeat;
+      object-fit: cover;
+    }
+  }
+
+  main#about{
+       // ABOUT PAGE
+   section#about-sec-1{
+    padding: 8rem 0;
+    background-size: 90%;
+    img.about-img1{
+      height: 300px;
+    }
+  }
+
+  iframe{
+    height: 450px;
+  }
+    section#nature-sec-3{
+      padding: 5rem 0 8rem 0;
+    }
+  }
+
+  section#food-gallery{
+    padding: 0 0 9rem 0;
 
 
+  }
+
+  section#food-gallery-2{
+    padding: 5rem 0 10rem 0;
+  }
+
+  section#blog-wrap{
+    padding: 8rem 0;
+    .card{
+      img{
+        height: 220px;
+
+      }
+    }
+
+    div#aside{
+      padding: 0 0 5rem 0;
+      div#featured_prod_aside{
+        img{
+          height: 160px;
+        }
+      }
+    }
+  }
  }
 
 // Large devices (desktops, 992px and up)
@@ -1270,6 +1480,69 @@ button.navbar-toggler.collapsed{
         transform: translateX(-50%);
       }
     }
+
+    
+    main#about{
+      // ABOUT PAGE
+      section#about-sec-1{
+        padding: 8rem 0;
+        background-size: 50%;
+        img.about-img1{
+          width: 100%;
+          height: 370px;
+        }
+
+        img.about-img-2,  img.about-img-1{
+          height: 260px;
+        }
+
+        img.about-img-3,  img.about-img-4{
+          height: 190px;
+        }
+     
+
+      }
+
+      iframe{
+      height: 400px;
+      }
+      section#nature-sec-3{
+        padding: 8rem 0 10rem 0;
+      }
+    }
+
+    section#food-gallery{
+      padding: 0 0 6rem 0;
+      
+    }
+  
+    section#food-gallery-2{
+      padding: 8rem 0 10rem 0;
+
+      .container-img { 
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    section#blog-wrap{
+      padding: 8rem 0;
+      // .card{
+      //   img{
+      //     height: 220px;
+  
+      //   }
+      // }
+  
+      div#aside{
+        padding: 0 0 5rem 0;
+        div#featured_prod_aside{
+          img{
+            height: 90px;
+          }
+        }
+      }
+    }
+
  }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -1853,7 +2126,6 @@ button.navbar-toggler.collapsed{
       padding: 10rem 0;
       background: center/over repeat;
       background-size: 30%;
-
       
       .card{
         position: relative;
@@ -1893,6 +2165,62 @@ button.navbar-toggler.collapsed{
         top:-13.8rem;
         left: 50%;
         transform: translateX(-50%);
+      }
+    }
+
+
+    main#about{
+      // ABOUT PAGE
+      section#about-sec-1{
+        padding: 10rem 0;
+        background-size: 30%;
+
+        img.about-img1{
+          height: 200px;
+        }
+  
+        img.about-img-2,  img.about-img-1{
+          height: 450px;
+        }
+  
+        img.about-img-3,  img.about-img-4{
+          height: 200px;
+        }
+      }
+  
+      iframe{
+      height: 500px;
+      }
+      section#nature-sec-3{
+        padding: 10rem 0 12rem 0;
+
+
+        iframe{
+          height: 500px;
+        }
+      }
+    }
+
+    section#bird-content-cuisine{
+      padding: 10rem 0;
+    }
+
+    section#blog-wrap{
+      padding: 8rem 0;
+      .card{
+        img{
+          height: 220px;
+  
+        }
+      }
+  
+      div#aside{
+        padding: 0 0 5rem 0;
+        div#featured_prod_aside{
+          img{
+            height: 130px;
+          }
+        }
       }
     }
   }
