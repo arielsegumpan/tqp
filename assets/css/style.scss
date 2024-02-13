@@ -472,7 +472,7 @@ button.navbar-toggler.collapsed{
   }
   section#nature-sec-5{
     button#prevBtn-2, button#nextBtn-2{
-      padding: 16px 22px;
+      padding: 16px 23px;
       border: 3px solid $prim;
       border-radius: 100%;
       color: $prim;
@@ -652,7 +652,7 @@ button.navbar-toggler.collapsed{
     background-size: 90%;
 
     button#prevBtn-2, button#nextBtn-2{
-      padding: 16px 22px;
+      padding: 16px 23px;
       border: 3px solid $prim;
     }
 
@@ -676,7 +676,6 @@ button.navbar-toggler.collapsed{
 
   }
 
-
   // BIRD PAGE
   section#bird-content, section#bird-content-cuisine{
     padding: 5rem 0 9rem 0;
@@ -692,7 +691,6 @@ button.navbar-toggler.collapsed{
   section#bird-content-cuisine{
     padding: 5rem 0;
   }
-
   
   // CUISINE
   section#food-gallery,  section#food-gallery-2{
@@ -771,7 +769,6 @@ button.navbar-toggler.collapsed{
     }
   }
 
-
   // CONTACT PAGE
   section#contact{
     padding: 5rem 0 7rem 0; 
@@ -815,7 +812,11 @@ button.navbar-toggler.collapsed{
     }
 
     section#nature-sec-3{
-      padding: 5rem 0 8rem 0;
+      padding: 5rem 0 5rem 0;
+    }
+
+    section#bird-content{
+      padding: 0 0 8rem 0;
     }
   }
 
@@ -890,8 +891,48 @@ button.navbar-toggler.collapsed{
     }
   }
 
-}
+  main#farm{
+    section#bird-content{
+      padding: 5rem 0;
+    }
+  }
 
+  main#bird{
+    section#nature-sec-1{
+      img.img-1{
+        height: 190px;
+        margin: 8px 0 0 0;
+      }
+      img.img-2{
+        height: 450px;
+        position: absolute;
+        left: 0.3rem;
+
+      }
+
+      img.img-3{
+        height: 300px;
+      }
+    }
+
+    section#nature-sec-3{
+      img.img-1{
+        height: 216px;
+      }
+     
+    }
+  }
+
+  main#fruit{
+    .nat-carous-content1{
+      img{
+        height: unset;
+      }
+    }
+  }
+
+ 
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
@@ -1060,11 +1101,15 @@ button.navbar-toggler.collapsed{
     }
 
     section#nature-sec-3{
-      padding: 5rem 0 8rem 0;
+      padding: 5rem 0 5rem 0;
 
       iframe{
         height: 300px;
       }
+    }
+
+    section#bird-content{
+      padding: 0 0 9rem 0;
     }
   }
 
@@ -1112,8 +1157,18 @@ button.navbar-toggler.collapsed{
     }
   }
 
+  main#farm{
+    section#bird-content{
+      padding: 5rem 0 ;
+    }
 
+    section#food-gallery{
+      padding: 0 0 9rem 0;
+    }
 
+  }
+
+  
  }
 
 // Medium devices (tablets, 768px and up)
@@ -1329,7 +1384,7 @@ button.navbar-toggler.collapsed{
     background-size: 90%;
 
     button#prevBtn-2, button#nextBtn-2{
-      padding: 16px 22px;
+      padding: 16px 23px;
       border: 3px solid $prim;
     }
 
@@ -1352,7 +1407,6 @@ button.navbar-toggler.collapsed{
 
 
   }
-
 
   // CONTACT PAGE
   section#contact{
@@ -1394,6 +1448,9 @@ button.navbar-toggler.collapsed{
 
   section#food-gallery-2{
     padding: 5rem 0 10rem 0;
+    .container-img { 
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   section#blog-wrap{
@@ -1441,29 +1498,75 @@ button.navbar-toggler.collapsed{
     }
   }
 
+  main#bird, main#farm{
+    section#nature-sec-1{
+      img.img-1{
+        height: 500px;
+        margin: 8px 0 0 0;
+      }
+      img.img-2{
+        height: 660px;
+        left: 1rem;
+      }
 
+      img.img-3{
+        height: 300px;
+      }
+    }
+
+    section#nature-sec-3{
+      img.img-1{
+        height: 426px;
+      }
+     
+    }
+  }
+
+  main#fruit{
+    section#nature-sec-3{
+      img.img-1{
+        height: 516px;
+      }
+
+      img.img-2{
+        height:250px;
+      }
+    }
+  }
+
+  // section#nature-sec-4{
+  //   .row.row-cols-2.g-3.g-lg-4.imgs-2{
+  //     img.img4-1{
+  //       height: 400px;
+  //     }
+  //     img.img4-2{
+  //       height: 367px;
+  //       bottom: -9rem;
+  //     }
+  //   }
+  // } 
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 
-  section#jumbotron{
-    height:70svh;
+    section#jumbotron{
+      height:70svh;
 
-    div#jumb-col{
-      height: 55svh;
+      div#jumb-col{
+        height: 55svh;
 
-      .jumb-wrap{
-        top: 74%;
-        transform: translateY(-50%);
+        .jumb-wrap{
+          top: 74%;
+          transform: translateY(-50%);
+        }
       }
+
+
+      .jumb-overlay{
+          height: 70svh;
+        }
     }
-
-
-    .jumb-overlay{
-        height: 70svh;
-      }
-  }
 
 
     // carousel
@@ -1619,7 +1722,11 @@ button.navbar-toggler.collapsed{
       height: 400px;
       }
       section#nature-sec-3{
-        padding: 8rem 0 10rem 0;
+        padding: 8rem 0 6rem 0;
+      }
+
+      section#bird-content{
+        padding: 0 0 10rem 0;
       }
     }
 
@@ -1694,6 +1801,91 @@ button.navbar-toggler.collapsed{
         }
       }
     }
+
+    main#farm{
+      section#bird-content{
+        padding: 7rem 0 5rem 0 ;
+      }
+  
+      section#food-gallery{
+        padding: 0 0 11rem 0;
+      }
+  
+      section#nature-sec-3{
+        img.img-1{
+          height: 426px;
+        }
+      }
+
+      section#food-gallery{
+        .container-img {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+
+    main#fruit{
+      section#nature-sec-3{
+        img.img-1{
+          height: 532px;
+        }
+
+        img.img-2{
+          height: 306px;
+        }
+      }
+    }
+
+    main#nature{
+      section#nature-sec-3{
+        img.img-1{
+          height: 532px;
+        }
+
+        img.img-2{
+          height: 306px;
+        }
+      }
+
+      section#nature-sec-4{
+        .row.row-cols-2.g-3.g-lg-4.imgs-2{
+          img.img4-1{
+            height: 280px;
+          }
+          img.img4-2{
+            height: 325px;
+            bottom: -7rem;
+          }
+        }
+      } 
+    }
+    main#herbal{
+      section#nature-sec-3{
+        img.img-1{
+          height: 526px;
+        }
+        img.img-2{
+          height: 297px;
+        }
+      }
+
+      section#nature-sec-1{
+        .imgs-1{
+          img.img-2{
+            height: 500px;
+            
+          }
+          img.img-1{
+            margin: 8px 0 0 0;
+            height: 280px;
+          }
+          img.img-3{
+            height: 330px;
+          }
+        }
+      }
+    }
+
 
  }
 
@@ -2097,7 +2289,7 @@ button.navbar-toggler.collapsed{
       background-size: 30%;
 
       button#prevBtn-2, button#nextBtn-2{
-        padding: 16px 22px;
+        padding: 16px 23px;
         border: 3px solid $prim;
       }
 
@@ -2343,12 +2535,16 @@ button.navbar-toggler.collapsed{
       height: 500px;
       }
       section#nature-sec-3{
-        padding: 10rem 0 12rem 0;
+        padding: 10rem 0 8rem 0;
 
 
         iframe{
           height: 500px;
         }
+      }
+
+      section#bird-content{
+        padding: 0 0 12rem 0;
       }
     }
 
@@ -2374,6 +2570,72 @@ button.navbar-toggler.collapsed{
         }
       }
     }
+
+    main#farm{
+      section#bird-content{
+        padding: 7rem 0 5rem 0 ;
+      }
+  
+      section#food-gallery{
+        padding: 0 0 11rem 0;
+      }
+  
+      section#nature-sec-3{
+        img.img-1{
+          height: 500px;
+        }
+      }
+
+      section#food-gallery{
+        .container-img {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+
+    main#bird{
+      section#nature-sec-1{
+        img.img-1{
+          height: 330px;
+          margin: 8px 0 0 0;
+        }
+        img.img-2{
+          height: 535px;
+          left: .7rem;
+        }
+  
+        img.img-3{
+          height: 300px;
+        }
+      }
+  
+      section#nature-sec-3{
+        img.img-1{
+          height: 500px;
+        }
+       
+      }
+    }
+    main#nature{
+      section#nature-sec-3{
+        img.img-1{
+          height: 570px;
+        }
+      }
+      
+      section#nature-sec-4{
+        .row.row-cols-2.g-3.g-lg-4.imgs-2{
+          img.img4-1{
+            height: 350px;
+          }
+          img.img4-2{
+            height: 320px;
+            bottom: -3.5rem;
+          }
+        }
+      } 
+    }
+   
   }
 
 // XX-Large devices (larger desktops, 1400px and up)
