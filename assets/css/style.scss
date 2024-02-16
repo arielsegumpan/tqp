@@ -842,9 +842,9 @@ button.navbar-toggler.collapsed{
 
     section#nature-sec-31{
       padding: 5rem 0 5rem 0;
-      background-size: 110%;
+      background-size: 310%;
       background-repeat: no-repeat;
-      background-position: right center;
+      background-position: center center;
   
       img{
         width: 100%;
@@ -866,15 +866,20 @@ button.navbar-toggler.collapsed{
         height: 200px;
       }
   
+      
+      section#bird-content1{
+        padding: 5rem 0 8rem 0;
+
+        span{
+          img{
+            width: 150px!important;
+            height: auto;
+          }
+        }
+
+      }
     }
 
-    section#bird-content1{
-      padding: 0 0 8rem 0;
-      background-size: 210%;
-      background-repeat: no-repeat;
-      background-position: left center;
-
-    }
 
     section#bird-content{
       padding: 0 0 8rem 0;
@@ -1526,6 +1531,7 @@ button.navbar-toggler.collapsed{
     section#about-sec-11{
       padding: 8rem 0;
       background-size: 190%;
+      background-position: right top;
       img.about-img1{
         height: 300px;
       }
@@ -1864,11 +1870,13 @@ button.navbar-toggler.collapsed{
       section#nature-sec-31{
         padding: 8rem 0 6rem 0;
         background-size: 150%;
+
+        section#bird-content1{
+          padding: 7rem 0 10rem 0;
+        }
       }
 
-      section#bird-content1{
-        padding: 0 0 10rem 0;
-      }
+      
     }
 
     section#food-gallery{
@@ -2718,12 +2726,19 @@ button.navbar-toggler.collapsed{
 
       section#nature-sec-31{
         padding: 8rem 0 6rem 0;
-        background-size: 150%;
+        background-size: 80%;
+        background-position: center center;
+
+        iframe{
+          height: 430px;
+          }
+
+
+        section#bird-content1{
+          padding: 8rem 0 9rem 0;
+        }
       }
 
-      section#bird-content1{
-        padding: 0 0 10rem 0;
-      }
     }
 
     section#bird-content-cuisine{
