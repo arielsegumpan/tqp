@@ -382,7 +382,7 @@ button.navbar-toggler.collapsed{
 
   section#service{
     padding: 5rem 0;
-    background-size: 90%;
+    background-size: 190%;
 
     .service-icons{
       img{
@@ -788,6 +788,7 @@ button.navbar-toggler.collapsed{
     section#about-sec-1{
       padding: 5rem 0;
       background-size: 90%;
+
       img.about-img1{
         width: 100%;
         height: 200px;
@@ -811,8 +812,68 @@ button.navbar-toggler.collapsed{
    
     }
 
-    section#nature-sec-3{
+    section#about-sec-11{
+      padding: 5rem 0;
+      background-size: 210%;
+      background-repeat: no-repeat;
+      background-position: left center;
+      img.about-img1{
+        width: 100%;
+        height: 200px;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+
+      img.about-img-2,  img.about-img-1{
+        width: 100%;
+        height: 150px;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+
+      img.about-img-3,  img.about-img-4{
+        width: 100%;
+        height: 280px;
+        background: center/cover no-repeat;
+        object-fit: cover;
+      }
+   
+    }
+
+    section#nature-sec-31{
       padding: 5rem 0 5rem 0;
+      background-size: 110%;
+      background-repeat: no-repeat;
+      background-position: right center;
+  
+      img{
+        width: 100%;
+        background-size: cover;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  
+      img.img-1{
+        height: 250px;
+      }
+  
+      img.img-2{
+        height: 200px;
+      }
+  
+      img.img-3{
+        height: 200px;
+      }
+  
+    }
+
+    section#bird-content1{
+      padding: 0 0 8rem 0;
+      background-size: 210%;
+      background-repeat: no-repeat;
+      background-position: left center;
+
     }
 
     section#bird-content{
@@ -1100,6 +1161,24 @@ button.navbar-toggler.collapsed{
    
     }
 
+    section#about-sec-11{
+      padding: 5rem 0;
+      background-size: 90%;
+      img.about-img1{
+        height: 200px;
+      }
+
+      img.about-img-2,  img.about-img-1{
+        height: 180px;
+      }
+
+      img.about-img-3,  img.about-img-4{
+        height: 250px;
+      }
+   
+    }
+
+
     section#nature-sec-3{
       padding: 5rem 0 5rem 0;
 
@@ -1108,7 +1187,19 @@ button.navbar-toggler.collapsed{
       }
     }
 
+    section#nature-sec-31{
+      padding: 5rem 0 5rem 0;
+
+      iframe{
+        height: 300px;
+      }
+    }
+
     section#bird-content{
+      padding: 0 0 9rem 0;
+    }
+
+    section#bird-content1{
       padding: 0 0 9rem 0;
     }
   }
@@ -1427,16 +1518,39 @@ button.navbar-toggler.collapsed{
    section#about-sec-1{
     padding: 8rem 0;
     background-size: 90%;
-    img.about-img1{
-      height: 300px;
+      img.about-img1{
+        height: 300px;
+      }
     }
-  }
 
-  iframe{
-    height: 450px;
-  }
+    section#about-sec-11{
+      padding: 8rem 0;
+      background-size: 190%;
+      img.about-img1{
+        height: 300px;
+      }
+    }
+
+
+    iframe{
+      height: 450px;
+    }
     section#nature-sec-3{
       padding: 5rem 0 8rem 0;
+    }
+
+    section#nature-sec-31{
+      padding: 5rem 0 8rem 0;
+      background-size: 70%;
+
+      iframe{
+        height: 460px;
+      }
+    }
+
+    section#bird-content1{
+      background-size: 100%;
+      background-position: right top;
     }
   }
 
@@ -1718,6 +1832,24 @@ button.navbar-toggler.collapsed{
 
       }
 
+      section#about-sec-11{
+        padding: 8rem 0;
+        background-size: 150%;
+        img.about-img1{
+          width: 100%;
+          height: 370px;
+        }
+
+        img.about-img-2,  img.about-img-1{
+          height: 260px;
+        }
+
+        img.about-img-3,  img.about-img-4{
+          height: 190px;
+        }
+
+      }
+
       iframe{
       height: 400px;
       }
@@ -1726,6 +1858,15 @@ button.navbar-toggler.collapsed{
       }
 
       section#bird-content{
+        padding: 0 0 10rem 0;
+      }
+
+      section#nature-sec-31{
+        padding: 8rem 0 6rem 0;
+        background-size: 150%;
+      }
+
+      section#bird-content1{
         padding: 0 0 10rem 0;
       }
     }
@@ -2047,8 +2188,9 @@ button.navbar-toggler.collapsed{
 
   section#service{
     padding: 10rem 0;
-    
-
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: right center;
     .service-icons{
       img{
         width: 100%;
@@ -2086,7 +2228,7 @@ button.navbar-toggler.collapsed{
 
   section#blog{
     padding: 10rem 0;
-
+    background-size: 120%;
     .card{
       img{
         width: 100%;
@@ -2530,6 +2672,24 @@ button.navbar-toggler.collapsed{
           height: 200px;
         }
       }
+
+      section#about-sec-11{
+        padding: 10rem 0;
+        background-size: 150%;
+        img.about-img1{
+          width: 100%;
+          height: 370px;
+        }
+
+        img.about-img-2,  img.about-img-1{
+          height: 650px;
+        }
+
+        img.about-img-3,  img.about-img-4{
+          height: 190px;
+        }
+
+      }
   
       iframe{
       height: 500px;
@@ -2545,6 +2705,24 @@ button.navbar-toggler.collapsed{
 
       section#bird-content{
         padding: 0 0 12rem 0;
+      }
+
+      iframe{
+      height: 400px;
+      }
+
+
+      section#bird-content{
+        padding: 0 0 10rem 0;
+      }
+
+      section#nature-sec-31{
+        padding: 8rem 0 6rem 0;
+        background-size: 150%;
+      }
+
+      section#bird-content1{
+        padding: 0 0 10rem 0;
       }
     }
 

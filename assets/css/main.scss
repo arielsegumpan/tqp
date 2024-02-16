@@ -56,7 +56,6 @@ $custom-colors: (
   "pcolor": $pcolor,
   "lteal" : $lteal
 );
-
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
