@@ -565,6 +565,53 @@ button.navbar-toggler.collapsed{
       }
     }
   }
+  section#farm-sec-1{
+    padding: 5rem 0;
+    background-repeat: repeat;
+    background-size: 90%;
+
+    .imgs-1{
+      img{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      img.img-1{
+        height: 150px;
+      }
+      img.img-2{
+        height: 300px;
+        position: absolute;
+        width:90%;
+        top: -1rem;
+      }
+      img.img-3{
+      
+        height: 200px;
+      }
+
+    }
+
+    .imgs-2{
+      img:nth-child(1){
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+      img:nth-child(2){
+        width: 100%;
+        height:150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
   section#nature-sec-2{
     padding: 5rem 0;
     background-repeat: repeat;
@@ -1403,6 +1450,13 @@ button.navbar-toggler.collapsed{
     background-size: 50%;
     padding: 7rem 0;
   }
+
+  section#farm-sec-1{
+    background-size: 50%;
+    padding: 7rem 0;
+  }
+
+
   section#nature-sec-2{
     padding: 7rem 0;
     background-size: 50%;
@@ -2343,6 +2397,53 @@ button.navbar-toggler.collapsed{
       }
     }
   }
+  section#farm-sec-1{
+    padding: 10rem 0;
+    background-repeat: repeat;
+    background-size: 30%;
+
+    .imgs-1{
+      img{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      img.img-1{
+        height: 150px;
+      }
+      img.img-2{
+        height: 400px;
+        position: absolute;
+        width:80%;
+        top: -1.5rem;
+      }
+      img.img-3{
+      
+        height: 400px;
+      }
+
+    }
+
+    .imgs-2{
+      img:nth-child(1){
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+      img:nth-child(2){
+        width: 100%;
+        height:150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
   section#nature-sec-2{
     padding: 10rem 0;
     background-repeat: repeat;
@@ -3093,6 +3194,53 @@ button.navbar-toggler.collapsed{
     padding: 10rem 0;
     background-repeat: no-repeat;
     background-size: 80%;
+
+    .imgs-1{
+      img{
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        object-fit: cover;
+      }
+
+      img.img-1{
+        height: 150px;
+      }
+      img.img-2{
+        height: 400px;
+        position: absolute;
+        width:80%;
+        top: -1.5rem;
+      }
+      img.img-3{
+      
+        height: 400px;
+      }
+
+    }
+
+    .imgs-2{
+      img:nth-child(1){
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+      img:nth-child(2){
+        width: 100%;
+        height:150px;
+        object-fit: cover;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  section#farm-sec-1{
+    padding: 10rem 0;
+    background-repeat: repeat;
+    background-size: 30%;
 
     .imgs-1{
       img{
