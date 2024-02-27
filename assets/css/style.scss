@@ -740,7 +740,7 @@ button.navbar-toggler.collapsed{
   }
   
   // CUISINE
-  section#food-gallery,  section#food-gallery-2{
+  section#food-gallery,  section#food-gallery-2{  
     padding: 0 0 5rem 0;
     .container-img {
       display: grid;
@@ -797,7 +797,25 @@ button.navbar-toggler.collapsed{
   }
 
   section#food-gallery-2{
-    padding: 5rem 0 8rem 0;
+    padding: 5rem 0 10rem 0;
+    .card{
+      .card-image{ 
+        height: 170px;
+        overflow: hidden;
+        img{
+          transition: .8s ease;
+          transform: scale(1);
+        }
+      }
+
+    }
+    .card:hover{
+      .card-image{
+        img{
+          transform: scale(1.25);
+        }
+      }
+    }
   }
 
    // footer
@@ -915,7 +933,7 @@ button.navbar-toggler.collapsed{
   
       
       section#bird-content1{
-        padding: 5rem 0 8rem 0;
+        padding: 5rem 0 5rem 0;
 
         span{
           img{
@@ -1339,7 +1357,15 @@ button.navbar-toggler.collapsed{
   }
 
   section#food-gallery-2{
-    padding: 5rem 0 8rem 0;
+    padding: 5rem 0 9rem 0;
+    .container-img{
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card{
+      .card-image{
+        height: 165px;
+      }
+    }
   }
 
   section#jumbotron{
@@ -1420,6 +1446,13 @@ button.navbar-toggler.collapsed{
 
       iframe{
         height: 300px;
+      }
+
+      section#bird-content1 {
+        padding: 5rem 0 6rem 0;
+        img{
+          height: 250px;
+        }
       }
     }
 
@@ -1661,6 +1694,7 @@ button.navbar-toggler.collapsed{
       }
     }
   }
+
  }
 
 // Medium devices (tablets, 768px and up)
@@ -1954,8 +1988,17 @@ button.navbar-toggler.collapsed{
       iframe{
         height: 460px;
       }
+
+      section#bird-content1{
+        padding: 7rem 0 3rem 0;
+
+        img{
+          height: 310px;
+        }
+      }
     }
 
+   
     section#bird-content1{
       background-size: 100%;
       background-position: right top;
@@ -1969,9 +2012,15 @@ button.navbar-toggler.collapsed{
   }
 
   section#food-gallery-2{
-    padding: 5rem 0 10rem 0;
+    padding: 6rem 0 10rem 0;
     .container-img { 
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card{
+      .card-image{
+        height: 165px;
+      }
     }
   }
 
@@ -2442,7 +2491,7 @@ button.navbar-toggler.collapsed{
         background-size: 150%;
 
         section#bird-content1{
-          padding: 7rem 0 10rem 0;
+          padding: 7rem 0 6rem 0;
         }
       }
 
@@ -2455,10 +2504,12 @@ button.navbar-toggler.collapsed{
     }
   
     section#food-gallery-2{
-      padding: 8rem 0 10rem 0;
+      padding: 8rem 0 11rem 0;
 
-      .container-img { 
-        grid-template-columns: repeat(3, 1fr);
+      .card{
+        .card-image{
+          height: 210px;
+        }
       }
     }
 
@@ -3403,6 +3454,12 @@ button.navbar-toggler.collapsed{
   
         .container-img {
           grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .card{
+        .card-image{
+          height: 300px;
         }
       }
 
@@ -4499,7 +4556,13 @@ button.navbar-toggler.collapsed{
       padding: 10rem 0;
   
         .container-img {
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .card{
+          .card-image{
+            height: 220px;
+          }
         }
       }
 
@@ -4578,8 +4641,11 @@ button.navbar-toggler.collapsed{
           height: 370px;
         }
 
-        img.about-img-2,  img.about-img-1{
-          height: 650px;
+        img.about-img-1{
+          height: 440px;
+        }
+        img.about-img-2{
+          height: 550px;
         }
 
         img.about-img-3,  img.about-img-4{
@@ -4614,7 +4680,7 @@ button.navbar-toggler.collapsed{
       }
 
       section#nature-sec-31{
-        padding: 8rem 0 6rem 0;
+        padding: 10rem 0 6rem 0;
         background-size: 80%;
         background-position: center center;
 
@@ -4625,6 +4691,10 @@ button.navbar-toggler.collapsed{
 
         section#bird-content1{
           padding: 8rem 0 9rem 0;
+
+          img{
+            height: 350px;
+          }
         }
       }
 
