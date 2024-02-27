@@ -1204,6 +1204,22 @@ button.navbar-toggler.collapsed{
     }
   }
 
+  main#nature{
+    section#nature-bird-content{
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 225%;
+      padding: 5rem 0 9rem 0;
+      .bird-img{
+        img{
+          height: 400px;
+          width: 100%;
+          background: center/cover no-repeat;
+          object-fit: cover;
+        }
+      }
+    }
+  }
  
 }
 
@@ -1327,10 +1343,10 @@ button.navbar-toggler.collapsed{
   }
 
   section#jumbotron{
-    height: 115svh;
+    height: 125svh;
 
     div#jumb-col{
-      height: 115svh;
+      height: 125svh;
 
 
       .jumb-wrap{
@@ -1633,7 +1649,18 @@ button.navbar-toggler.collapsed{
     background-size: 70%;
   }
 
-
+  main#nature{
+    section#nature-bird-content{
+      background-position: center center;
+      background-size: 225%;
+      padding: 5rem 0 9rem 0;
+      .bird-img{
+        img{
+          height: 400px;
+        }
+      }
+    }
+  }
  }
 
 // Medium devices (tablets, 768px and up)
@@ -2134,7 +2161,7 @@ button.navbar-toggler.collapsed{
 
   }
 
-  main#bird{
+  main#bird{  
     section#nature-sec-1{
       padding: 7rem 0;
       background-size: 70%;
@@ -2196,7 +2223,18 @@ button.navbar-toggler.collapsed{
       }
     }
   }
-
+  main#nature{
+    section#nature-bird-content{
+      background-position: center center;
+      background-size: 100%;
+      padding: 7rem 0 12rem 0;
+      .bird-img{
+        img{
+          height: 400px;
+        }
+      }
+    }
+  }
  }
 
 // Large devices (desktops, 992px and up)
@@ -3808,6 +3846,18 @@ button.navbar-toggler.collapsed{
       }
     }
   
+    main#nature{
+      section#nature-bird-content{
+        background-position: center center;
+        background-size: 100%;
+        padding: 10rem 0 12rem 0;
+        .bird-img{
+          img{
+            height: 400px;
+          }
+        }
+      }
+    }
   }
 
 // XX-Large devices (larger desktops, 1400px and up)
