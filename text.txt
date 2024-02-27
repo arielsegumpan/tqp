@@ -1,0 +1,40 @@
+        <!-- <section id="nature-sec-4" class="bg-lteal mb-lg-0" style="background-image: url('assets/imgs/bird-side-teal-10.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center text-md-start mb-5 mb-md-0">
+                        <h1 class="text-primary">Neque porro quisquam est qui dolorem ipsum quia</h1>
+                        <p class="lh-lg text-primary monts mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quasi praesentium nam pariatur dignissimos impedit consequatur accusamus! Molestiae nihil cumque aliquam officia animi obcaecati ipsa iusto nulla facere. Minus ratione fuga at illum iste, ut, est, consectetur labore quisquam atque beatae officiis nihil? Dolor tempore sit mollitia voluptatum ab ducimus quasi modi in vero dolore expedita quam debitis, esse beatae.</p>
+                        <div class="mt-5">
+                            <a href="#!" class="ms-auto text-decoration-none text-uppercase text-primary"><i class="bi bi-arrow-right me-2"></i> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row row-cols-2 g-3 g-lg-4 imgs-2">
+                            <div class="col position-relative mb-auto px-2 px-lg-auto">
+                                <img class="img4-1 rounded-4" src="assets/imgs/tqp-room.png" alt="">
+                            </div>
+                            <div class="col position-relative mt-auto px-2 px-lg-auto">
+                                <img class="img4-2 rounded-4" src="assets/imgs/pexels-quang-nguyen-vinh-14036478.jpg" alt="">
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nature-sec-2" class="bg-primary"  style="background-image: url('assets/imgs/pattern-white.png');">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <img class="rounded-4 img-fluid" src="assets/imgs/pexels-quang-nguyen-vinh-14036478.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-lg-6 text-center text-lg-start mt-5 mt-lg-0">
+                        <div class="nat-carous-content1">
+                            <h1 class="text-lteal">Neque porro quisquam est qui dolorem ipsum quia</h1>
+                            <p class="lh-lg text-lteal monts mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore libero, optio provident enim odit repellendus doloremque iusto blanditiis velit, dolorem, delectus ullam omnis esse itaque. Suscipit odit quis, iusto accusantium vitae dignissimos, pariatur aperiam placeat corrupti itaque a? Quo expedita error minus. Provident impedit et accusamus inventore quis asperiores commodi sapiente. Vitae, corporis molestias? Ipsa autem assumenda ea nobis laborum quos dicta quia numquam excepturi sapiente soluta quasi consequatur non totam ex illo, deserunt modi ut fugiat. Ex, tempora possimus laborum, incidunt amet aliquid numquam, provident rerum itaque cupiditate fugiat autem. Incidunt praesentium, esse, repudiandae voluptatibus nesciunt ex deserunt itaque, veniam qui nam dicta. Incidunt quos corporis nulla rerum vero id, sit debitis aliquid fugit, possimus tempora quis et assumenda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
