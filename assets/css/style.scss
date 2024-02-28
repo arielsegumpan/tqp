@@ -329,7 +329,9 @@ button.navbar-toggler.collapsed{
    // INDEX PAGE
   section#welcome{
     padding: 5rem 0;
-    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 170%;
 
     .welcome-imgs-wrap{
       img{
@@ -382,7 +384,9 @@ button.navbar-toggler.collapsed{
 
   section#service{
     padding: 5rem 0;
-    background-size: 190%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 160%;
 
     .service-icons{
       img{
@@ -426,6 +430,9 @@ button.navbar-toggler.collapsed{
 
   section#blog{
     padding: 10rem 0 8rem 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 300%;
 
     .card{
       img{
@@ -794,6 +801,24 @@ button.navbar-toggler.collapsed{
 
   section#food-gallery{
     padding: 0 0 9rem 0;
+    .card{
+      .card-image{ 
+        height: 170px;
+        overflow: hidden;
+        img{
+          transition: .8s ease;
+          transform: scale(1);
+        }
+      }
+
+    }
+    .card:hover{
+      .card-image{
+        img{
+          transform: scale(1.25);
+        } 
+      }
+    }
   }
 
   section#food-gallery-2{
@@ -1237,6 +1262,12 @@ button.navbar-toggler.collapsed{
         }
       }
     }
+
+    section#nature-sec-5{
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 120%;
+    }
   }
  
 }
@@ -1252,7 +1283,7 @@ button.navbar-toggler.collapsed{
 
   // carousel
   section#carousel{
-    height: 160svh;
+    height: 180svh;
 
     .carous-wrap{
       // carousel font
@@ -1263,10 +1294,10 @@ button.navbar-toggler.collapsed{
 // -----
     #carous{
       .item{
-          height: 160svh;
+          height: 180svh;
 
          #bg-img{
-          height:  160svh;
+          height:  180svh;
          }
       }
     }
@@ -1274,7 +1305,8 @@ button.navbar-toggler.collapsed{
 
    // INDEX PAGE
   section#welcome{
-    
+    background-position: center center;
+    background-size: 100%;
 
     .welcome-imgs-wrap{
       img{
@@ -1313,8 +1345,9 @@ button.navbar-toggler.collapsed{
 
   section#service{
     padding: 5rem 0;
+    background-position: left center;
+    background-size: 100%;
     
-
     .service-icons{
       img{
         height: 60px;
@@ -1340,6 +1373,8 @@ button.navbar-toggler.collapsed{
 
   section#blog{
     padding: 10rem 0 8rem 0;
+    background-position: left center;
+    background-size: 150%;
     .card{
       img{
         height: 250px;
@@ -1395,7 +1430,6 @@ button.navbar-toggler.collapsed{
       height: 200px;
     }
   }
-
 
   main#about{
     section#about-sec-1{
@@ -1735,7 +1769,10 @@ button.navbar-toggler.collapsed{
    // INDEX PAGE
   section#welcome{
     padding: 8rem 0;
-    
+    background-position: center top;
+    background-size: 100%;
+
+
     .welcome-imgs-wrap{
       img{
         height: 320px;
@@ -1772,9 +1809,10 @@ button.navbar-toggler.collapsed{
     }
   }
 
-  section#sevrice{
+  section#service{
     padding: 8rem 0;
-    
+    background-position: center center;
+    background-size: 60%;
 
     .service-icons{
       img{
@@ -1802,6 +1840,8 @@ button.navbar-toggler.collapsed{
 
   section#blog{
     padding: 10rem 0 5rem 0;
+    background-position: left center;
+    background-size: 110%;
     .card{
       img{
         height: 250px;
@@ -2284,6 +2324,10 @@ button.navbar-toggler.collapsed{
       }
     }
   }
+
+  footer {
+    background-size: 50%;
+  }
  }
 
 // Large devices (desktops, 992px and up)
@@ -2338,6 +2382,8 @@ button.navbar-toggler.collapsed{
     // INDEX PAGE
     section#welcome{
       padding: 8rem 0;
+      background-position: center top;
+      background-size: 70%;
       
 
       .welcome-imgs-wrap{
@@ -2349,7 +2395,7 @@ button.navbar-toggler.collapsed{
 
     section#accommodation{
       padding: 8rem 0;
-      background-size: 70%;
+      background-size: 30%;
       .accom-imgs-wrap{
         img.accom-img-1{
           height: 250px;
@@ -2375,9 +2421,10 @@ button.navbar-toggler.collapsed{
       }
     }
 
-    section#sevrice{
+    section#service{
       padding: 8rem 0;
-      
+      background-position: right top;
+      background-size: 50%;
 
       .service-icons{
         img{
@@ -2394,7 +2441,7 @@ button.navbar-toggler.collapsed{
 
     section#others{
       padding: 5rem 0 6rem 0;
-      background-size: 70%;
+      background-size: 30%;
       .other-img-wrap{
         img{
           height: 150px;
@@ -2606,7 +2653,11 @@ button.navbar-toggler.collapsed{
     }
 
     main#nature{
+      section#nature-sec-1{
+        background-size: 30%;
+      }
       section#nature-sec-3{
+        background-size: 30%;
         img.img-1{
           height: 532px;
         }
@@ -2945,7 +2996,7 @@ button.navbar-toggler.collapsed{
     padding: 10rem 0;
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 80%;
+    background-size: 60%;
 
     .welcome-imgs-wrap{
       img{
@@ -2996,7 +3047,7 @@ button.navbar-toggler.collapsed{
 
   section#service{
     padding: 10rem 0;
-    background-size: 80%;
+    background-size: 60%;
     background-repeat: no-repeat;
     background-position: right center;
     .service-icons{
@@ -3036,7 +3087,8 @@ button.navbar-toggler.collapsed{
 
   section#blog{
     padding: 10rem 0;
-    background-size: 120%;
+    background-position: right center;
+    background-size: 70%;
     .card{
       img{
         width: 100%;
@@ -4546,6 +4598,12 @@ button.navbar-toggler.collapsed{
     // CUISINE
     section#food-gallery{
       padding: 0 0 12rem 0;
+
+      .card{
+        .card-image{
+          height: 270px;
+        }
+      }
 
       .container-img {
         grid-template-columns: repeat(4, 1fr);
