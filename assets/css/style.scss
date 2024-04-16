@@ -191,6 +191,7 @@ ul{
       li{
         a{
           color: $dark-gray!important;
+          text-shadow: unset!important;
           // transition: .3s ease;
         }
       }
@@ -264,13 +265,15 @@ button.navbar-toggler.collapsed{
         outline:none!important;
         box-shadow:none!important;
         border: none;
-
+        border: 2px solid $white;
+        border-radius: 100%;
         i{
             position: relative;
             z-index: 5;
-            padding: 15px 18px;
-            border: 3px solid $white;
-            border-radius: 100%;
+            width: 100px;
+            height: 100px;
+            
+           
             color: $light-teal;
             font-size:1.5rem!important;
         }
@@ -517,7 +520,8 @@ button.navbar-toggler.collapsed{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90svh;
+    height: 75svh;
+    margin-top: 5.2rem;
 
     div#jumb-col{
       height: 90svh;
@@ -530,6 +534,29 @@ button.navbar-toggler.collapsed{
         top: 58%;
         transform: translateY(-50%);
       }
+    }
+
+    .container{
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      height: 100%;
+      
+
+      .col-12.jumb-wrapper{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        h1, p {
+          text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+        }
+      }
+      
     }
 
 
@@ -1368,15 +1395,18 @@ button.navbar-toggler.collapsed{
       }
     }
 // -----
-    #carous{
-      .item{
-          height: 180svh;
+  #carous{
+    .item{
+        height:180svh;
+      #bg-img{
+        height:180svh;
+      }
 
-         #bg-img{
-          height:  180svh;
-         }
+      .img-overlay{
+        height: 180svh;
       }
     }
+  }
   }
 
    // INDEX PAGE
@@ -1479,23 +1509,75 @@ button.navbar-toggler.collapsed{
     }
   }
 
+  // section#jumbotron{
+  //   height: 125svh;
+
+  //   div#jumb-col{
+  //     height: 125svh;
+
+
+  //     .jumb-wrap{
+  //       top: 60%;
+  //       transform: translateY(-50%);
+  //     }
+  //   }
+
+  //   .jumb-overlay{
+  //       height: 115svh;
+  //     }
+  // }
+
   section#jumbotron{
-    height: 125svh;
-
-    div#jumb-col{
-      height: 125svh;
-
-
-      .jumb-wrap{
-        top: 60%;
-        transform: translateY(-50%);
-      }
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95svh;
+    width: 100%;
+    margin-top: 5.2rem;
+    img.single-jumb-img{
+      width: 100%;
+      object-fit: cover;
+      height: 95svh;
+      background-size: cover;
     }
 
-    .jumb-overlay{
-        height: 115svh;
+    .container{
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      height: 100%;
+
+      .col-12.jumb-wrapper{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        h1, p {
+          text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+        }
       }
+      
+    }
+
+  .jumb-overlay{
+        position: absolute;
+        width: 100%;
+        height: 95svh;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+        background: linear-gradient(207deg, rgba(0,161,155,0.5) 0%, rgba(0,212,255,0.1) 70%);
   }
+   
+  }
+
 
   section#single-jumbotron{
     margin-top: 5.2rem;
@@ -1830,7 +1912,7 @@ button.navbar-toggler.collapsed{
 
   // carousel
   section#carousel{
-    height: 100svh;
+    height: 70svh;
 
     .carous-wrap{
       // carousel font
@@ -1838,22 +1920,44 @@ button.navbar-toggler.collapsed{
         font-size: 3.5rem;
       }
     }
-// -----
+
     #carous{
       .item{
-          height: 100svh;
-
+          width: 100%;
+          height: 70svh;
+          overflow: hidden;
          #bg-img{
-          height:  100svh;
+          height:70svh;
+          width: 100%;
+          overflow: hidden;
          }
+
+          .content{
+             width: 100%;
+              left: 50%;
+              top:50%;
+              transform: translate(-50%,-50%);
+          }
+
+          .img-overlay{
+            height: 70svh;
+          }
       }
+    }
+// -----
+    // #carous{
+    //   .item{
+    //       height: 100svh;
+
+    //      #bg-img{
+    //       height:  100svh;
+    //      }
+    //   }
     }
 
     #soc-med{
       margin-top: 3rem;
     }
-
-  }
 
    // INDEX PAGE
   section#welcome{
@@ -1940,24 +2044,36 @@ button.navbar-toggler.collapsed{
   // END OF INDEX PAGE
 
   // NATURE WALK PAGE
+  // section#jumbotron{
+  //   height:55svh;
+
+  //   div#jumb-col{
+  //     height: 55svh;
+
+  //     .jumb-wrap{
+  //       top: 57%;
+  //       transform: translateY(-50%);
+  //     }
+  //   }
+
+
+  //   .jumb-overlay{
+  //       height: 70svh;
+  //     }
+  // }
   section#jumbotron{
-    height:55svh;
+    margin-top: 5.2rem;
+    height: 40svh;
 
-    div#jumb-col{
-      height: 55svh;
-
-      .jumb-wrap{
-        top: 57%;
-        transform: translateY(-50%);
-      }
+    img.single-jumb-img{
+      height:40svh;
     }
 
-
     .jumb-overlay{
-        height: 70svh;
-      }
+          height: 40svh;
+    }
+   
   }
-  
   section#single-jumbotron{
     margin-top: 5.2rem;
     height: 40svh;
@@ -2440,22 +2556,36 @@ button.navbar-toggler.collapsed{
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
 
+    // section#jumbotron{
+    //   height:70svh;
+
+    //   div#jumb-col{
+    //     height: 55svh;
+
+    //     .jumb-wrap{
+    //       top: 74%;
+    //       transform: translateY(-50%);
+    //     }
+    //   }
+
+
+    //   .jumb-overlay{
+    //       height: 70svh;
+    //     }
+    // }
+
     section#jumbotron{
-      height:70svh;
-
-      div#jumb-col{
-        height: 55svh;
-
-        .jumb-wrap{
-          top: 74%;
-          transform: translateY(-50%);
-        }
+      margin-top: 5.2rem;
+      height: 60svh;
+  
+      img.single-jumb-img{
+        height:60svh;
       }
-
-
+  
       .jumb-overlay{
-          height: 70svh;
-        }
+            height: 60svh;
+      }
+     
     }
     
     section#single-jumbotron{
@@ -2475,7 +2605,7 @@ button.navbar-toggler.collapsed{
 
     // carousel
     section#carousel{
-      height: 100svh;
+      height: 90svh;
   
       .carous-wrap{
         // carousel font
@@ -2484,19 +2614,23 @@ button.navbar-toggler.collapsed{
         }
       }
   // -----
-      #carous{
-        .item{
-            height: 100svh;
-  
-           #bg-img{
-            height:  100svh;
-           }
+    #carous{
+      .item{
+          height:90svh;
+        #bg-img{
+          height:90svh;
+        }
+
+        .img-overlay{
+          height: 90svh;
         }
       }
-  
-      #soc-med{
-        margin-top: 3rem;
-      }
+    }
+
+
+    #soc-med{
+      margin-top: 3rem;
+    }
   
     }
 
@@ -3070,11 +3204,15 @@ button.navbar-toggler.collapsed{
                 top:50%;
                 transform: translate(-50%,-50%);
             }
+
+            .img-overlay{
+              height: 100svh;
+            }
         }
     }
 
     .carous-wrap{
-      top: 60%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
       z-index: 5;
@@ -3233,43 +3371,55 @@ button.navbar-toggler.collapsed{
   // END OF INDEX PAGE
 
   // NATURE WALK PAGE
+  // section#jumbotron{
+  //   overflow: hidden;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  //   height: 80svh;
+
+  //   div#jumb-col{
+  //     height: 80svh;
+
+  //     h1, p {
+  //       text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+  //     }
+
+  //     .jumb-wrap{
+  //       top: 53%;
+  //       transform: translateY(-50%);
+  //     }
+  //   }
+
+
+  //   .jumb-overlay{
+  //       position: absolute;
+  //       width: 100%;
+  //       height: 100svh;
+  //       overflow: hidden;
+  //       top: 50%;
+  //       left: 50%;
+  //       transform: translate(-50%,-50%);
+  //       z-index: 3;
+  //       background: linear-gradient(207deg, rgba(0,161,155,0.3551471614036239) 0%, rgba(0,212,255,0.00500710538121496) 70%);
+  //     }
+  //     .col-12{
+  //       z-index: 5;
+  //     }
+  // }
   section#jumbotron{
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 80svh;
+    margin-top: 0;
+    height: 70svh;
 
-    div#jumb-col{
-      height: 80svh;
-
-      h1, p {
-        text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
-      }
-
-      .jumb-wrap{
-        top: 53%;
-        transform: translateY(-50%);
-      }
+    img.single-jumb-img{
+      height: 70svh;
     }
 
-
     .jumb-overlay{
-        position: absolute;
-        width: 100%;
-        height: 100svh;
-        overflow: hidden;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 3;
-        background: linear-gradient(207deg, rgba(0,161,155,0.3551471614036239) 0%, rgba(0,212,255,0.00500710538121496) 70%);
-      }
-      .col-12{
-        z-index: 5;
-      }
+          height: 70svh;
+    }
+   
   }
-
   section#single-jumbotron{
     margin-top: 0;
     height: 70svh;
@@ -4342,43 +4492,55 @@ button.navbar-toggler.collapsed{
   // END OF INDEX PAGE
 
   // NATURE WALK PAGE
+  // section#jumbotron{
+  //   overflow: hidden;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  //   height: 70svh;
+
+  //   div#jumb-col{
+  //     height: 70svh;
+
+  //     h1, p {
+  //       text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+  //     }
+
+  //     .jumb-wrap{
+  //       top: 53%;
+  //       transform: translateY(-50%);
+  //     }
+  //   }
+
+
+  //   .jumb-overlay{
+  //       position: absolute;
+  //       width: 100%;
+  //       height: 100svh;
+  //       overflow: hidden;
+  //       top: 50%;
+  //       left: 50%;
+  //       transform: translate(-50%,-50%);
+  //       z-index: 3;
+  //       background: linear-gradient(207deg, rgba(0,161,155,0.3551471614036239) 0%, rgba(0,212,255,0.00500710538121496) 70%);
+  //     }
+  //     .col-12{
+  //       z-index: 5;
+  //     }
+  // }
   section#jumbotron{
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 70svh;
+    margin-top: 0;
+    height: 60svh;
 
-    div#jumb-col{
-      height: 70svh;
-
-      h1, p {
-        text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
-      }
-
-      .jumb-wrap{
-        top: 53%;
-        transform: translateY(-50%);
-      }
+    img.single-jumb-img{
+      height: 60svh;
     }
 
-
     .jumb-overlay{
-        position: absolute;
-        width: 100%;
-        height: 100svh;
-        overflow: hidden;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        z-index: 3;
-        background: linear-gradient(207deg, rgba(0,161,155,0.3551471614036239) 0%, rgba(0,212,255,0.00500710538121496) 70%);
-      }
-      .col-12{
-        z-index: 5;
-      }
+          height: 60svh;
+    }
+   
   }
-
   section#single-jumbotron{
     margin-top: 0;
     height: 60svh;
@@ -4386,7 +4548,7 @@ button.navbar-toggler.collapsed{
     img.single-jumb-img{
       height: 60svh;
     }
-    
+
     .jumb-overlay{
           height: 60svh;
     }
