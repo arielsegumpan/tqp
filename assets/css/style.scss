@@ -211,7 +211,6 @@ button.navbar-toggler.collapsed{
     box-shadow:none!important;
 }
 
-
 // extra-Small devices (portait phones, 375px and up)
 @media (min-width: 375px) { 
   body{
@@ -326,7 +325,8 @@ button.navbar-toggler.collapsed{
             left: 50%;
             transform: translate(-50%,-50%);
             z-index: 0;
-            background: linear-gradient(14deg, rgba(0, 128, 128, 0.176) 0%, rgba(7, 7, 7, 0.579) 100%);
+            background: linear-gradient(14deg, rgba(0, 128, 128, 0.176) 0%, rgba(7, 7, 7, 0.9) 100%);
+            // background: linear-gradient(207deg, rgba(0, 161, 155, 0.9) 0%, rgba(0, 212, 255, 0.2) 70%);
           }
       }
     }
@@ -520,8 +520,15 @@ button.navbar-toggler.collapsed{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 75svh;
+    height: 65svh;
     margin-top: 5.2rem;
+
+    img.single-jumb-img{
+      width: 100%;
+      object-fit: cover;
+      height: 65svh;
+      background-size: cover;
+    }
 
     div#jumb-col{
       height: 90svh;
@@ -563,18 +570,71 @@ button.navbar-toggler.collapsed{
     .jumb-overlay{
         position: absolute;
         width: 100%;
-        height: 90svh;
+        height: 65svh;
         overflow: hidden;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 3;
         background: linear-gradient(207deg, rgba(0,161,155,0.3551471614036239) 0%, rgba(0,212,255,0.00500710538121496) 70%);
-      }
+    }
       .col-12{
         z-index: 5;
       }
   }
+
+  section#jumbotron_rooms{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 65svh;
+    margin-top: 5.2rem;
+
+    img.single-jumb-img{
+      width: 100%;
+      object-fit: cover;
+      height: 65svh;
+      background-size: cover;
+    }
+
+    .container{
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      height: 100%;
+
+      .col-12.jumb-wrapper{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        h1, p {
+          text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+        }
+      }
+      
+    }
+
+  .jumb-overlay{
+        position: absolute;
+        width: 100%;
+        height: 65svh;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 3;
+        background: linear-gradient(207deg, rgba(0,161,155,0.5) 0%, rgba(0,212,255,0.1) 70%);
+  }
+   
+  }
+
+
 
   section#single-jumbotron{
     overflow: hidden;
@@ -850,7 +910,7 @@ button.navbar-toggler.collapsed{
   }
   
   // CUISINE
-  section#food-gallery,  section#food-gallery-2{  
+  section#food-gallery,  section#food-gallery-2, section#meeting-gallery{  
     padding: 0 0 5rem 0;
     .container-img {
       display: grid;
@@ -924,6 +984,30 @@ button.navbar-toggler.collapsed{
     }
   }
 
+
+  section#meeting-gallery{
+    padding: 5rem 0 9rem 0;
+    .card{
+      .card-image{ 
+        height: 170px;
+        overflow: hidden;
+        img{
+          transition: .8s ease;
+          transform: scale(1);
+        }
+      }
+
+    }
+    .card:hover{
+      .card-image{
+        img{
+          transform: scale(1.25);
+        } 
+      }
+    }
+  }
+
+
   section#food-gallery-2{
     padding: 5rem 0 10rem 0;
     .card{
@@ -959,6 +1043,7 @@ button.navbar-toggler.collapsed{
       top:-9.8rem; //def -13.8rem
       left: 50%;
       transform: translateX(-50%);
+      z-index: 6;
     }
   }
 
@@ -1373,6 +1458,42 @@ button.navbar-toggler.collapsed{
     }
   }
  
+  // MEETINGS
+  section#contact-sec{
+
+    h5{
+      font-size: 1rem;
+    }
+    
+    height: 95svh;
+    img.contact-bg-img{
+      height:95svh;
+      width: 100%;
+      object-fit: cover;
+      background-position: center;
+
+    }
+
+    .container{
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 5;
+    }
+
+    .jumb-overlay{
+      position: absolute;
+      width: 100%;
+      height: 95svh;
+      overflow: hidden;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 3;
+      background: linear-gradient(207deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 70%);
+    }
+
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -1497,6 +1618,14 @@ button.navbar-toggler.collapsed{
     }
   }
 
+  
+  section#meeting-gallery{
+    padding: 6rem 0;
+    .container-img { 
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   section#food-gallery-2{
     padding: 5rem 0 9rem 0;
     .container-img{
@@ -1528,6 +1657,58 @@ button.navbar-toggler.collapsed{
   // }
 
   section#jumbotron{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95svh;
+    width: 100%;
+    margin-top: 5.2rem;
+    img.single-jumb-img{
+      width: 100%;
+      object-fit: cover;
+      height: 95svh;
+      background-size: cover;
+    }
+
+    .container{
+      position: absolute;
+      width: 100%;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%, -50%);
+      z-index: 5;
+      height: 100%;
+
+      .col-12.jumb-wrapper{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+        h1, p {
+          text-shadow: 1px 5px 7px rgba(0,0,0,0.19);
+        }
+      }
+      
+    }
+
+    .jumb-overlay{
+          position: absolute;
+          width: 100%;
+          height: 95svh;
+          overflow: hidden;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          z-index: 3;
+          background: linear-gradient(207deg, rgba(0,161,155,0.5) 0%, rgba(0,212,255,0.1) 70%);
+    }
+    
+  }
+
+
+  section#jumbotron_rooms{
     overflow: hidden;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1900,6 +2081,24 @@ button.navbar-toggler.collapsed{
     }
   }
 
+
+  // MEETINGS
+  section#contact-sec{
+
+    h5{
+      font-size: 1rem;
+    }
+    
+    height: 140svh;
+    img.contact-bg-img{
+      height: 140svh;
+    }
+
+    .jumb-overlay{
+      height: 140svh;
+    }
+  }
+
  }
 
 // Medium devices (tablets, 768px and up)
@@ -2074,16 +2273,32 @@ button.navbar-toggler.collapsed{
     }
    
   }
-  section#single-jumbotron{
+
+  section#jumbotron_rooms{
     margin-top: 5.2rem;
-    height: 40svh;
+    height: 35svh;
 
     img.single-jumb-img{
-      height:40svh;
+      height:35svh;
     }
 
     .jumb-overlay{
-          height: 40svh;
+          height: 35svh;
+    }
+   
+  }
+
+
+  section#single-jumbotron{
+    margin-top: 5.2rem;
+    height: 30svh;
+
+    img.single-jumb-img{
+      height:30svh;
+    }
+
+    .jumb-overlay{
+          height: 30svh;
     }
    
   }
@@ -2275,7 +2490,20 @@ button.navbar-toggler.collapsed{
   }
 
   section#food-gallery-2{
-    padding: 6rem 0 10rem 0;
+    padding: 5rem 0 8rem 0;
+    .container-img { 
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card{
+      .card-image{
+        height: 165px;
+      }
+    }
+  }
+
+  section#meeting-gallery-2{
+    padding: 5rem 0 8rem 0;
     .container-img { 
       grid-template-columns: repeat(3, 1fr);
     }
@@ -2551,6 +2779,25 @@ button.navbar-toggler.collapsed{
   footer {
     background-size: 50%;
   }
+
+
+  // MEETINGS
+  section#contact-sec{
+
+    h5{
+      font-size: unset;
+    }
+    
+    height: 70svh;
+    img.contact-bg-img{
+      height: 70svh;
+    }
+
+    .jumb-overlay{
+      height: 70svh;
+    }
+  }
+
  }
 
 // Large devices (desktops, 992px and up)
@@ -2575,6 +2822,20 @@ button.navbar-toggler.collapsed{
     // }
 
     section#jumbotron{
+      margin-top: 5.2rem;
+      height: 60svh;
+  
+      img.single-jumb-img{
+        height:60svh;
+      }
+  
+      .jumb-overlay{
+            height: 60svh;
+      }
+     
+    }
+
+    section#jumbotron_rooms{
       margin-top: 5.2rem;
       height: 60svh;
   
@@ -2806,7 +3067,17 @@ button.navbar-toggler.collapsed{
     }
   
     section#food-gallery-2{
-      padding: 8rem 0 11rem 0;
+      padding: 6rem 0 9rem 0;
+
+      .card{
+        .card-image{
+          height: 210px;
+        }
+      }
+    }
+
+    section#meeting-gallery{
+      padding: 6rem 0 9rem 0;
 
       .card{
         .card-image{
@@ -2889,6 +3160,12 @@ button.navbar-toggler.collapsed{
       }
 
       section#food-gallery{
+        .container-img {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      section#meeting-gallery{
         .container-img {
           grid-template-columns: repeat(3, 1fr);
         }
@@ -3344,8 +3621,8 @@ button.navbar-toggler.collapsed{
    
   }
 
-  section#blog{
-    padding: 10rem 0;
+  section#blog{ 
+    padding: 7rem 0;
     background-position: right center;
     background-size: 70%;
     .card{
@@ -3409,17 +3686,32 @@ button.navbar-toggler.collapsed{
   // }
   section#jumbotron{
     margin-top: 0;
-    height: 70svh;
+    height: 60svh;
 
     img.single-jumb-img{
-      height: 70svh;
+      height: 60svh;
     }
 
     .jumb-overlay{
-          height: 70svh;
+          height: 60svh;
+    }
+  }
+
+  section#jumbotron_rooms{
+    margin-top: 0;
+    height: 60svh;
+
+    img.single-jumb-img{
+      height: 60svh;
+    }
+
+    .jumb-overlay{
+          height: 60svh;
     }
    
   }
+
+
   section#single-jumbotron{
     margin-top: 0;
     height: 70svh;
@@ -3435,7 +3727,7 @@ button.navbar-toggler.collapsed{
   }
 
   section#nature-sec-1{
-    padding: 10rem 0;
+    padding: 7rem 0;
     background-repeat: repeat;
     background-size: 30%;
 
@@ -3482,7 +3774,7 @@ button.navbar-toggler.collapsed{
     }
   }
   section#farm-sec-1{
-    padding: 10rem 0;
+    padding: 7rem 0;
     background-repeat: repeat;
     background-size: 30%;
 
@@ -3529,7 +3821,7 @@ button.navbar-toggler.collapsed{
     }
   }
   section#nature-sec-2{
-    padding: 10rem 0;
+    padding: 7rem 0;
     background-repeat: repeat;
     background-size: 30%;
 
@@ -3566,7 +3858,7 @@ button.navbar-toggler.collapsed{
      
   } 
   section#nature-sec-3{
-      padding: 10rem 0;
+      padding: 7rem 0;
       background-repeat: repeat;
       background-size: 30%;
 
@@ -3619,7 +3911,7 @@ button.navbar-toggler.collapsed{
       }
   }
   section#nature-sec-5{
-    padding: 10rem 0;
+    padding: 7rem 0;
     background-repeat: repeat;
     background-size: 30%;
 
@@ -3679,7 +3971,7 @@ button.navbar-toggler.collapsed{
 
     // BIRD PAGE
     section#bird-content{
-      padding: 10rem 0;
+      padding: 7rem 0 8rem 0;
       .bird-img{
         img{
           height: 400px;
@@ -3692,7 +3984,7 @@ button.navbar-toggler.collapsed{
 
     // CONTACT PAGE
     section#contact{
-      padding: 10rem 0;
+      padding: 7rem 0;
 
       .row.row-cols-2{
         iframe{
@@ -3708,31 +4000,32 @@ button.navbar-toggler.collapsed{
 
     // WELLNESS PAGE
     section#well-sec-1{
-      padding: 10rem 0;
+      padding: 7rem 0;
       background: center/over repeat;
       background-size: 30%;
 
       .img-float{
         img{
           width: 100%;
-          height: 300px;
+          height: 250px;
           object-fit: cover;
           background: center/cover no-repeat;
         }
       }
     }
     section#well-sec-2{
-      padding: 20rem 0 10rem 0;
+      padding: 18rem 0 7rem 0;
 
       #nat-carous1{
         img{
           width: 100%;
-          height: 500px!important;
+          height: 480px!important;
+          object-fit: cover;
         }
       }
     }
     section#well-sec-3{
-      padding: 10rem 0;
+      padding: 7rem 0;
       background: center/over repeat;
       background-size: 30%;
       img{
@@ -3787,8 +4080,18 @@ button.navbar-toggler.collapsed{
       }
     }
 
-    section#food-gallery-2{
+    section#meeting-gallery{
       padding: 10rem 0;
+
+      .container-img {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    
+
+    section#food-gallery-2{
+      padding: 5rem 0 8rem 0;
   
         .container-img {
           grid-template-columns: repeat(3, 1fr);
@@ -3803,7 +4106,7 @@ button.navbar-toggler.collapsed{
 
     // BLOG PAGE
     section#blog-wrap{
-      padding: 10rem 0;
+      padding: 6rem 0;
       background: center/over repeat;
       background-size: 30%;
       
@@ -3851,7 +4154,7 @@ button.navbar-toggler.collapsed{
     main#about{
       // ABOUT PAGE
       section#about-sec-1{
-        padding: 10rem 0;
+        padding: 7rem 0;
         background-size: 30%;
 
         img.about-img1{
@@ -3868,7 +4171,7 @@ button.navbar-toggler.collapsed{
       }
 
       section#about-sec-11{
-        padding: 10rem 0;
+        padding: 7rem 0;
         background-size: 150%;
         img.about-img1{
           width: 100%;
@@ -3889,7 +4192,7 @@ button.navbar-toggler.collapsed{
       height: 500px;
       }
       section#nature-sec-3{
-        padding: 10rem 0 8rem 0;
+        padding: 7rem 0 8rem 0;
 
 
         iframe{
@@ -3921,18 +4224,18 @@ button.navbar-toggler.collapsed{
 
 
         section#bird-content1{
-          padding: 8rem 0 9rem 0;
+          padding: 8rem 0 3rem 0;
         }
       }
 
     }
 
     section#bird-content-cuisine{
-      padding: 10rem 0;
+      padding: 7rem 0;
     }
 
     section#blog-wrap{
-      padding: 10rem 0 12rem 0;
+      padding: 7rem 0 10rem 0;
       .card{
         img{
           height: 220px;
@@ -4253,6 +4556,23 @@ button.navbar-toggler.collapsed{
         }
       }
     }
+
+    // MEETINGS
+    section#contact-sec{
+
+      h5{
+        font-size: unset;
+      }
+      
+      height: 60svh;
+      img.contact-bg-img{
+        height: 60svh;
+      }
+
+      .jumb-overlay{
+        height: 60svh;
+      }
+    }
   }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -4290,7 +4610,7 @@ button.navbar-toggler.collapsed{
       height: 80px;
       z-index: -1;
     }
-  }
+  } 
 
   // INDEX PAGE
   section#carousel{
@@ -4371,7 +4691,7 @@ button.navbar-toggler.collapsed{
     }
   }
   section#welcome{
-    padding: 10rem 0;
+    padding: 8rem 0;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 50%;
@@ -4386,7 +4706,7 @@ button.navbar-toggler.collapsed{
   }
 
   section#accommodation{
-    padding: 10rem 0;
+    padding: 8rem 0;
     background-size: 30%;
     .accom-imgs-wrap{
       img{
@@ -4424,7 +4744,7 @@ button.navbar-toggler.collapsed{
   }
 
   section#service{
-    padding: 10rem 0;
+    padding: 8rem 0;
     background-size:60%;
     background-repeat: no-repeat;
     background-position: right top;
@@ -4445,7 +4765,7 @@ button.navbar-toggler.collapsed{
   }
 
   section#others{
-    padding: 10rem 0 12rem 0;
+    padding: 8rem 0 10rem 0;
     overflow: hidden;
     background-size: 30%;
 
@@ -4465,7 +4785,7 @@ button.navbar-toggler.collapsed{
   }
 
   section#blog{
-    padding: 10rem 0;
+    padding: 8rem 0;
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -4530,7 +4850,7 @@ button.navbar-toggler.collapsed{
   // }
   section#jumbotron{
     margin-top: 0;
-    height: 60svh;
+    height: 50svh;
 
     img.single-jumb-img{
       height: 60svh;
@@ -4539,8 +4859,23 @@ button.navbar-toggler.collapsed{
     .jumb-overlay{
           height: 60svh;
     }
+  }
+
+  section#jumbotron_rooms{
+    margin-top: 0;
+    height: 50svh;
+
+    img.single-jumb-img{
+      height:50svh;
+    }
+
+    .jumb-overlay{
+          height: 50svh;
+    }
    
   }
+
+
   section#single-jumbotron{
     margin-top: 0;
     height: 60svh;
@@ -4557,7 +4892,7 @@ button.navbar-toggler.collapsed{
 
 
   section#nature-sec-1{
-    padding: 10rem 0;
+    padding: 8rem 0;
     background-repeat: repeat;
     background-size: 30%;
 
@@ -4604,7 +4939,7 @@ button.navbar-toggler.collapsed{
     }
   }
   section#farm-sec-1{
-    padding: 10rem 0;
+    padding: 8rem 0;
     background-repeat: repeat;
     background-size: 30%;
 
@@ -4651,7 +4986,7 @@ button.navbar-toggler.collapsed{
     }
   }
   section#nature-sec-2{
-    padding: 10rem 0;
+    padding: 8rem 0;
     background-repeat: repeat;
     background-size: 30%;
 
@@ -4671,7 +5006,6 @@ button.navbar-toggler.collapsed{
       .item{
         height: auto;
         width: 100%;
-       
 
         img{
           border-radius: 16px;
@@ -4688,7 +5022,7 @@ button.navbar-toggler.collapsed{
      
     } 
     section#nature-sec-3{
-      padding: 10rem 0;
+      padding: 8rem 0;
       background-repeat: repeat;
       background-size: 30%;
 
@@ -4714,7 +5048,7 @@ button.navbar-toggler.collapsed{
 
     }
     section#nature-sec-4{
-      padding: 10rem 0;
+      padding: 8rem 0;
       background-repeat: no-repeat;
       background-size: 40%;
 
@@ -4741,7 +5075,7 @@ button.navbar-toggler.collapsed{
       }
     }
     section#nature-sec-5{
-      padding: 10rem 0;
+      padding: 8rem 0;
       background-repeat: no-repeat;
       background-size:50%;
       background-position: right top;
@@ -4775,7 +5109,7 @@ button.navbar-toggler.collapsed{
       background-position: center top;
       background-repeat: no-repeat;
       background-size: 70%;
-      padding: 10rem 0;
+      padding: 8rem 0;
       .bird-img{
         img{
           height: 400px;
@@ -4790,8 +5124,7 @@ button.navbar-toggler.collapsed{
 
     // ABOUT PAGE
     section#about-sec-1{
-      padding: 10rem 0;
-      padding: 10rem 0;
+      padding: 8rem 0;
       background-repeat: repeat;
       background-size: 30%;
       img{
@@ -4820,7 +5153,7 @@ button.navbar-toggler.collapsed{
 
     // BIRD PAGE
     section#bird-content{
-      padding: 10rem 0;
+      padding: 8rem 0 9rem 0;
       .bird-img{
         img{
           height: 400px;
@@ -4833,7 +5166,7 @@ button.navbar-toggler.collapsed{
 
     // CONTACT PAGE
     section#contact{
-      padding: 10rem 0;
+      padding: 8rem 0;
 
       .row.row-cols-2{
         iframe{
@@ -4850,7 +5183,7 @@ button.navbar-toggler.collapsed{
 
     // WELLNESS PAGE
     section#well-sec-1{
-      padding: 10rem 0;
+      padding: 8rem 0;
       background: center/over repeat;
       background-size: 30%;
 
@@ -4864,7 +5197,7 @@ button.navbar-toggler.collapsed{
       }
     }
     section#well-sec-2{
-      padding: 20rem 0 10rem 0;
+      padding: 18rem 0 8rem 0;
 
       #nat-carous1{
         img{
@@ -4874,7 +5207,7 @@ button.navbar-toggler.collapsed{
       }
     }
     section#well-sec-3{
-      padding: 10rem 0;
+      padding: 8rem 0;
       background: center/over repeat;
       background-size: 30%;
       img{
@@ -4898,7 +5231,7 @@ button.navbar-toggler.collapsed{
       }
     }
     section#well-sec-4{
-      padding: 10rem 0;
+      padding: 8rem 0;
       .row.row-cols-2.g-4.imgs-2{
         img{
           width: 100%;
@@ -4922,7 +5255,21 @@ button.navbar-toggler.collapsed{
 
     // CUISINE
     section#food-gallery{
-      padding: 0 0 12rem 0;
+      padding: 0 0 10rem 0;
+
+      .card{
+        .card-image{
+          height: 270px;
+        }
+      }
+
+      .container-img {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    section#meeting-gallery{
+      padding: 8rem 0 10rem 0;
 
       .card{
         .card-image{
@@ -4936,7 +5283,7 @@ button.navbar-toggler.collapsed{
     }
 
     section#food-gallery-2{
-      padding: 10rem 0;
+      padding: 6rem 0 9rem 0;
   
         .container-img {
           grid-template-columns: repeat(4, 1fr);
@@ -4951,7 +5298,7 @@ button.navbar-toggler.collapsed{
 
     // BLOG PAGE
     section#blog-wrap{
-      padding: 10rem 0;
+      padding: 8rem 0;
       background: center/over repeat;
       background-size: 30%;
       
@@ -5000,7 +5347,7 @@ button.navbar-toggler.collapsed{
     main#about{
       // ABOUT PAGE
       section#about-sec-1{
-        padding: 10rem 0;
+        padding: 8rem 0;
         background-size: 30%;
 
         img.about-img1{
@@ -5017,7 +5364,7 @@ button.navbar-toggler.collapsed{
       }
 
       section#about-sec-11{
-        padding: 10rem 0;
+        padding: 8rem 0;
         background-size: 150%;
         img.about-img1{
           width: 100%;
@@ -5041,7 +5388,7 @@ button.navbar-toggler.collapsed{
       height: 500px;
       }
       section#nature-sec-3{
-        padding: 10rem 0 8rem 0;
+        padding: 8rem 0 8rem 0;
 
 
         iframe{
@@ -5050,7 +5397,7 @@ button.navbar-toggler.collapsed{
       }
 
       section#bird-content{
-        padding: 0 0 12rem 0;
+        padding: 0 0 10rem 0;
       }
 
       iframe{
@@ -5059,11 +5406,11 @@ button.navbar-toggler.collapsed{
 
 
       section#bird-content{
-        padding: 0 0 10rem 0;
+        padding: 0 0 8rem 0;
       }
 
       section#nature-sec-31{
-        padding: 10rem 0 6rem 0;
+        padding:8rem 0 3rem 0;
         background-size: 80%;
         background-position: center center;
 
@@ -5084,11 +5431,11 @@ button.navbar-toggler.collapsed{
     }
 
     section#bird-content-cuisine{
-      padding: 10rem 0;
+      padding: 8rem 0;
     }
 
     section#blog-wrap{
-      padding: 10rem 0 12rem 0;
+      // padding: 8rem 0 9rem 0;
       .card{
         img{
           height: 220px;
@@ -5112,7 +5459,7 @@ button.navbar-toggler.collapsed{
       }
   
       section#food-gallery{
-        padding: 0 0 11rem 0;
+        padding: 0 0 10rem 0;
       }
   
       section#nature-sec-3{
@@ -5172,6 +5519,7 @@ button.navbar-toggler.collapsed{
 
     main#nature{
       section#nature-sec-3{
+        padding: 8rem 0;
         img.img-1{
           height: 570px;
         }
@@ -5223,4 +5571,134 @@ button.navbar-toggler.collapsed{
         }
       }
     }
+
+    section#contact-sec{
+      height: 44svh;
+      img.contact-bg-img{
+        height: 44svh;
+      }
+
+      .jumb-overlay{
+        height: 44svh;
+      }
+
+    }
+
+    main#fruit{
+
+      section#nature-sec-1{
+        padding: 8rem 0;
+        background-repeat: no-repeat;
+        background-size: 60%;
+        background-position: right top;
+    
+        .imgs-1{
+       
+          img.img-1{
+            height: 220px;
+          }
+          img.img-2{
+            height: 460px;
+            width:90%;
+            top: -1rem;
+          }
+          img.img-3{
+            height: 350px;
+          }
+    
+        }
+    
+        .imgs-2{
+          img:nth-child(1){
+            height: 150px;
+          }
+          img:nth-child(2){
+            height:150px;
+          }
+        }
+      }
+  
+      section#nature-sec-2{
+        padding: 8rem 0;
+        background-size: 30%;
+    
+        .nat-carous-content1{
+          img{
+            height: 62px;
+          }
+        }
+  
+  
+        img{
+          height: 300px;
+        }
+  
+        button#prevBtn-1, button#nextBtn-1{
+          padding: 16px 23px;
+          border: 3px solid $light-teal;
+        }
+    
+    
+        #nat-carous1{
+          .item{
+            height: 500px;
+    
+            img{
+              height: 500px;
+            }
+          }
+        }
+    
+      
+      }
+
+      section#nature-sec-3{
+        padding: 8rem 0;
+        background-size: 30%;
+    
+        img{
+          width: 100%;
+          background-size: cover;
+          object-fit: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+    
+        img.img-1{
+          height: 250px;
+        }
+    
+        img.img-2{
+          height: 200px;
+        }
+    
+        img.img-3{
+          height: 200px;
+        }
+    
+      }
+  
+      section#nature-sec-3{
+        img.img-1{
+          height: 545px;
+        }
+  
+        img.img-2{
+          height:320px;
+        }
+      }
+  
+      section#bird-content{
+        padding: 8rem 0 10rem 0;
+        background-size: 70%;
+        background-position: center top;
+  
+        .bird-img{
+          img{
+            height: 300px;
+          }
+        }
+      }
+    }
+  
  }
